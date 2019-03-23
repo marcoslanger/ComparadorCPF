@@ -1,0 +1,277 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:fault="http://www.portoseguro.com.br/foundation/PortoSeguroMessage" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsdLocal1="http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/">
+<types>
+<xsd:schema>
+<xsd:import namespace="http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/" schemaLocation="ConsultaDadosBCPIntegrationServiceV2_0.xsd"/>
+</xsd:schema>
+<xsd:schema>
+<xsd:import namespace="http://www.portoseguro.com.br/foundation/PortoSeguroMessage" schemaLocation="FaultType.xsd"/>
+</xsd:schema>
+</types>
+<message name="obterContratoResponse">
+<part name="obterContratoResponse" element="xsdLocal1:obterContratoResponse"> </part>
+</message>
+<message name="obterPessoasCompleto">
+<part name="obterPessoasCompleto" element="xsdLocal1:obterPessoasCompleto"> </part>
+</message>
+<message name="obterCorretor">
+<part name="obterCorretor" element="xsdLocal1:obterCorretor"> </part>
+</message>
+<message name="obterDadosVeiculo">
+<part name="obterDadosVeiculo" element="xsdLocal1:obterDadosVeiculo"> </part>
+</message>
+<message name="obterPessoas">
+<part name="obterPessoas" element="xsdLocal1:obterPessoas"> </part>
+</message>
+<message name="obterPapeisPessoasResponse">
+<part name="obterPapeisPessoasResponse" element="xsdLocal1:obterPapeisPessoasResponse"> </part>
+</message>
+<message name="portoSeguroFaultInfo">
+<documentation/>
+<part name="portoSeguroFaultInfo" element="fault:portoSeguroFaultInfo"> </part>
+</message>
+<message name="obterListaContratosResponse">
+<part name="obterListaContratosResponse" element="xsdLocal1:obterListaContratosResponse"> </part>
+</message>
+<message name="obterCorretorResponse">
+<part name="obterCorretorResponse" element="xsdLocal1:obterCorretorResponse"> </part>
+</message>
+<message name="obterPessoasContratosCompleto">
+<part name="obterPessoasContratosCompleto" element="xsdLocal1:obterPessoasContratosCompleto"> </part>
+</message>
+<message name="obterFuncionarioPrestador">
+<part name="obterFuncionarioPrestador" element="xsdLocal1:obterFuncionarioPrestador"> </part>
+</message>
+<message name="obterListaContratos">
+<part name="obterListaContratos" element="xsdLocal1:obterListaContratos"> </part>
+</message>
+<message name="obterPessoasCompletoResponse">
+<part name="obterPessoasCompletoResponse" element="xsdLocal1:obterPessoasCompletoResponse"> </part>
+</message>
+<message name="obterPapeisPessoas">
+<part name="obterPapeisPessoas" element="xsdLocal1:obterPapeisPessoas"> </part>
+</message>
+<message name="obterContratoCompletoResponse">
+<part name="obterContratoCompletoResponse" element="xsdLocal1:obterContratoCompletoResponse"> </part>
+</message>
+<message name="obterDadosCnaeResponse">
+<part name="obterDadosCnaeResponse" element="xsdLocal1:obterDadosCnaeResponse"> </part>
+</message>
+<message name="obterFuncionarioPrestadorResponse">
+<part name="obterFuncionarioPrestadorResponse" element="xsdLocal1:obterFuncionarioPrestadorResponse"> </part>
+</message>
+<message name="obterDadosCnae">
+<part name="obterDadosCnae" element="xsdLocal1:obterDadosCnae"> </part>
+</message>
+<message name="obterContrato">
+<part name="obterContrato" element="xsdLocal1:obterContrato"> </part>
+</message>
+<message name="obterDadosVeiculoResponse">
+<part name="obterDadosVeiculoResponse" element="xsdLocal1:obterDadosVeiculoResponse"> </part>
+</message>
+<message name="obterContratoCompleto">
+<part name="obterContratoCompleto" element="xsdLocal1:obterContratoCompleto"> </part>
+</message>
+<message name="obterPessoasContratosCompletoResponse">
+<part name="obterPessoasContratosCompletoResponse" element="xsdLocal1:obterPessoasContratosCompletoResponse"> </part>
+</message>
+<message name="obterPessoasResponse">
+<part name="obterPessoasResponse" element="xsdLocal1:obterPessoasResponse"> </part>
+</message>
+<portType name="ConsultaDadosBCPWS">
+<operation name="obterContrato">
+<input message="tns:obterContrato"> </input>
+<output message="tns:obterContratoResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterContratoCompleto">
+<input message="tns:obterContratoCompleto"> </input>
+<output message="tns:obterContratoCompletoResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterPapeisPessoas">
+<input message="tns:obterPapeisPessoas"> </input>
+<output message="tns:obterPapeisPessoasResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterPessoas">
+<input message="tns:obterPessoas"> </input>
+<output message="tns:obterPessoasResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterPessoasCompleto">
+<input message="tns:obterPessoasCompleto"> </input>
+<output message="tns:obterPessoasCompletoResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterPessoasContratosCompleto">
+<input message="tns:obterPessoasContratosCompleto"> </input>
+<output message="tns:obterPessoasContratosCompletoResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterDadosCnae">
+<input message="tns:obterDadosCnae"> </input>
+<output message="tns:obterDadosCnaeResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterCorretor">
+<input message="tns:obterCorretor"> </input>
+<output message="tns:obterCorretorResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterFuncionarioPrestador">
+<input message="tns:obterFuncionarioPrestador"> </input>
+<output message="tns:obterFuncionarioPrestadorResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterListaContratos">
+<input message="tns:obterListaContratos"> </input>
+<output message="tns:obterListaContratosResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+<operation name="obterDadosVeiculo">
+<input message="tns:obterDadosVeiculo"> </input>
+<output message="tns:obterDadosVeiculoResponse"> </output>
+<fault name="portoSeguroFault" message="tns:portoSeguroFaultInfo"> </fault>
+</operation>
+</portType>
+<binding name="ConsultaDadosBCPWS" type="tns:ConsultaDadosBCPWS">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<operation name="obterContrato">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterContrato"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterContratoCompleto">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterContratoCompleto"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterPapeisPessoas">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterPapeisPessoas"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterPessoas">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterPessoas"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterPessoasCompleto">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterPessoasCompleto"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterPessoasContratosCompleto">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterPessoasContratosCompleto"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterDadosCnae">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterDadosCnae"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterCorretor">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterCorretor"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterFuncionarioPrestador">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterFuncionarioPrestador"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterListaContratos">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterListaContratos"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+<operation name="obterDadosVeiculo">
+<soap:operation soapAction="http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/obterDadosVeiculo"/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="portoSeguroFault">
+<soap:fault name="portoSeguroFault" use="literal"/>
+</fault>
+</operation>
+</binding>
+<service name="ConsultaDadosBCPWS">
+<port name="ConsultaDadosBCPWS" binding="tns:ConsultaDadosBCPWS">
+<soap:address location="http://was7corp:80/bcp-serviceWS/ConsultaDadosBCPWS"/>
+</port>
+</service>
+</definitions>

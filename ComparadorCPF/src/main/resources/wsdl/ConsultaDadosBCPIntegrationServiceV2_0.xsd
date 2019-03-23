@@ -1,0 +1,1910 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsdLocal1="http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/">
+<xsd:complexType name="RetornoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="mensagem" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterContrato" type="xsdLocal1:ObterContratoType"/>
+<xsd:complexType name="ObterContratoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="filtroContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="produto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaProduto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProduto" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaSegmento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="codigoSituacaoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaFinal" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaInicial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="periodoDataEmissao">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="inicioDataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="finalDataEmissao" type="xsd:dateTime"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="chassi" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="placa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="suseps">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterContratoResponse" type="xsdLocal1:ObterContratoResponseType"/>
+<xsd:complexType name="ObterContratoResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="contratos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoCanalVenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresaQuemEmitiu" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSegmento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoContrato" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoSituacaoContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCanalVenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresaQuemEmitiu" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoVinculado" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papelPessoaContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagCadastroPortalCliente" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************************** -->
+<xsd:element name="obterPessoasContratosCompleto" type="xsdLocal1:ObterPessoasContratosCompletoType"/>
+<xsd:complexType name="ObterPessoasContratosCompletoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoAgregacaoPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="filtroContrato">
+<xsd:annotation>
+<xsd:documentation>
+UTILIZAR COMPONENTE DA ARQUITETURA DE FONÉTICA, pesquisa nos campos primeiroCodigoFonetico, segundoCodigoFonetico e terceiroCodigoFonetico:Zero or more repetitions:SOMENTO PARA PRODUTO AUTO, OU SEJA DEVE VALIDAR COM O CÓDIGO DE PRODUTO DO AUTO:
+</xsd:documentation>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="produto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaProduto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProduto" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaSegmento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="codigoSituacaoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaFinal" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaInicial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="periodoDataEmissao">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="inicioDataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="finalDataEmissao" type="xsd:dateTime"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="chassi" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="placa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="suseps">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterPessoasContratosCompletoResponse" type="xsdLocal1:ObterPessoasContratosCompletoResponseType"/>
+<xsd:complexType name="ObterPessoasContratosCompletoResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="acessosRestritos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoRestricaoAcessoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataExclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="contratos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoCanalVenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresaQuemEmitiu" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSegmento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosEletronicosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="enderecoEletronico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoContrato" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoSituacaoContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="itens">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEndosso" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFormaPagamento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoAlteracaoItem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoValorRecebido" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoValorRecebido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoItem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoItem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroSituacaoItem" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="localRisco">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeFormaPagamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoAlteracaoItem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoEndosso" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItemSistemaOrigem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroRenovacaoSimplificada" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="objeto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoObjeto" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoObjeto" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoObjeto" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ordemRenovacaoSimplificada" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="sinistros">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPerda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAvisoSinistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoPerda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSinistroOrigem" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorContrato" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorRecebimento" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorTotalContrato" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="veiculo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoFabricacaoVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoModeloVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMarcaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeModeloVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroChassiVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLicencaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCanalVenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresaQuemEmitiu" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoVinculado" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papelPessoaContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefonesContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papelPessoaContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoVinculoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosEletronicos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoEnderecoEletronico" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="enderecoEletronico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="fisica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoExposicaoPoliticaPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoAgregacaoPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSexo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoSituacaoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoGrupoAgregacao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataNascimento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="deficienciasFisicas">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDeficienciaFisica" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoDeficienciaFisica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaDeficienciaFisica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaEstrangeira" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEstadoCivil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEstadoCivil" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroEstadoCivil" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ocupacoes">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOcupacao" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOcupacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFaixaRenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFaixaRenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroFaixaRenda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePai" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculosPep">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoExposicaoPoliticaPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrauParentesco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeGrauParentesco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpf" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOcupacao" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOcupacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoaVinculada" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagCadastroPortalCliente" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="juridica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoNaturezaJuridica" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataRegistroAbertura" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFaixaValorContabil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoValorContabil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFaixaValorContabil" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeAtividadeCnae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeNaturezaJuridica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCnae" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papeisPessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefones">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoExposicaoPoliticaPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrauParentesco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoRelacionamentoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigenciaContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigenciaContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeGrauParentesco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoRelacionamentoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoVinculado" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoaVinculada" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="midiasSociais">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoSocial" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="emailSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="celularSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataNascimentoSocial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagSocial" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************************** -->
+<xsd:element name="obterContratoCompleto" type="xsdLocal1:ObterContratoCompletoType"/>
+<xsd:complexType name="ObterContratoCompletoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="filtroContrato">
+<xsd:annotation>
+<xsd:documentation>
+UTILIZAR COMPONENTE DA ARQUITETURA DE FONÉTICA, pesquisa nos campos primeiroCodigoFonetico, segundoCodigoFonetico e terceiroCodigoFonetico:Zero or more repetitions:SOMENTO PARA PRODUTO AUTO, OU SEJA DEVE VALIDAR COM O CÓDIGO DE PRODUTO DO AUTO:
+</xsd:documentation>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="produto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaProduto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProduto" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaSegmento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="codigoSituacaoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaFinal" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaInicial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="periodoDataEmissao">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="inicioDataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="finalDataEmissao" type="xsd:dateTime"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="chassi" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="placa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="suseps">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterContratoCompletoResponse" type="xsdLocal1:ObterContratoCompletoResponseType"/>
+<xsd:complexType name="ObterContratoCompletoResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="contratos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="scoreCorretor" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoCanalVenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresaQuemEmitiu" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSegmento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosEletronicosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="enderecoEletronico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoContrato" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoSituacaoContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="itens">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEndosso" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFormaPagamento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoAlteracaoItem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoValorRecebido" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoValorRecebido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoItem" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoItem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroSituacaoItem" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="localRisco">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeFormaPagamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoAlteracaoItem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoEndosso" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItemSistemaOrigem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroRenovacaoSimplificada" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="objeto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoObjeto" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoObjeto" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoObjeto" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="ordemRenovacaoSimplificada" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="sinistros">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPerda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAvisoSinistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoPerda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSinistroOrigem" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorContrato" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorRecebimento" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valorTotalContrato" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="veiculo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoFabricacaoVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoModeloVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMarcaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeModeloVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroChassiVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLicencaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCanalVenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresaQuemEmitiu" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoVinculado" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papelPessoaContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefonesContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papelPessoaContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoVinculoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagCadastroPortalCliente" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************************** -->
+<xsd:element name="obterPapeisPessoas" type="xsdLocal1:ObterPapeisPessoasType"/>
+<xsd:complexType name="ObterPapeisPessoasType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterPapeisPessoasResponse" type="xsdLocal1:ObterPapeisPessoasResponseType"/>
+<xsd:complexType name="ObterPapeisPessoasResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papeisPessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicio" type="xsd:dateTime"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************************** -->
+<xsd:element name="obterPessoas" type="xsdLocal1:ObterPessoasType"/>
+<xsd:complexType name="ObterPessoasType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterPessoasResponse" type="xsdLocal1:ObterPessoasResponseType"/>
+<xsd:complexType name="ObterPessoasResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosEletronicos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoEnderecoEletronico" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="enderecoEletronico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="fisica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoAgregacaoPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSexo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoGrupoAgregacao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataNascimento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaDeficienciaFisica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaEstrangeira" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEstadoCivil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEstadoCivil" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroEstadoCivil" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePai" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagCadastroPortalCliente" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="juridica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoNaturezaJuridica" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataRegistroAbertura" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeAtividadeCnae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeNaturezaJuridica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCnae" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papeisPessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefones">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************************** -->
+<xsd:element name="obterPessoasCompleto" type="xsdLocal1:ObterPessoasCompletoType"/>
+<xsd:complexType name="ObterPessoasCompletoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="tipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoAgregacaoPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterPessoasCompletoResponse" type="xsdLocal1:ObterPessoasCompletoResponseType"/>
+<xsd:complexType name="ObterPessoasCompletoResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="acessosRestritos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoRestricaoAcessoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataExclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="documentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaTitularDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoPessoaTitularDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaTipoDocumento" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosEletronicos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoEnderecoEletronico" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="enderecoEletronico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="fisica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoExposicaoPoliticaPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoAgregacaoPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSexo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoSituacaoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoGrupoAgregacao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataNascimento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="deficienciasFisicas">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoDeficienciaFisica" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoDeficienciaFisica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaDeficienciaFisica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagPessoaEstrangeira" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEstadoCivil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEstadoCivil" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroEstadoCivil" type="xsd:dateTime"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ocupacoes">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOcupacao" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOcupacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFaixaRenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFaixaRenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistroFaixaRenda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePai" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculosPep">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrauParentesco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeGrauParentesco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpf" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOcupacao" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOcupacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoaVinculada" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagCadastroPortalCliente" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="juridica">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoNaturezaJuridica" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataRegistroAbertura" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInclusaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFaixaValorContabil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoValorContabil" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFaixaValorContabil" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeAtividadeCnae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeNaturezaJuridica" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCnae" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTratamento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="papeisPessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="primeiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="segundoCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="terceiroCodigoFonetico" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefones">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="vinculos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoExposicaoPoliticaPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoExposicaoPoliticaPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrauParentesco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoRelacionamentoPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigenciaContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigenciaContrato" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeGrauParentesco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoRelacionamentoPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoVinculado" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoaVinculada" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoPessoaVinculada" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="midiasSociais">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoSocial" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="emailSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="celularSocial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataNascimentoSocial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagSocial" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************OBTER CNAE************** -->
+<xsd:element name="obterDadosCnae" type="xsdLocal1:ObterDadosCnaeType"/>
+<xsd:complexType name="ObterDadosCnaeType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="numeroCnae" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterDadosCnaeResponse" type="xsdLocal1:ObterDadosCnaeResponseType"/>
+<xsd:complexType name="ObterDadosCnaeResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="dadosCnae">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoClasseCnae" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDivisaoCnae" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoGrupoCnae" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSecaoCnae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoRegistro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSubclasseCnae" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeAtividadeCnae" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCnae" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroVersaoCnae" type="xsd:decimal"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************OBTER CORRETOR************** -->
+<xsd:element name="obterCorretor" type="xsdLocal1:ObterCorretorType"/>
+<xsd:complexType name="ObterCorretorType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterCorretorResponse" type="xsdLocal1:ObterCorretorResponseType"/>
+<xsd:complexType name="ObterCorretorResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="corretor">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeFantasiaCorretor" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioRelacionamento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalRelacionamento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!--
+************OBTER FUNCIONARIO PRESTADOR**************
+-->
+<xsd:element name="obterFuncionarioPrestador" type="xsdLocal1:ObterFuncionarioPrestadorType"/>
+<xsd:complexType name="ObterFuncionarioPrestadorType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="numeroPessoa" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterFuncionarioPrestadorResponse" type="xsdLocal1:ObterFuncionarioPrestadorResponseType"/>
+<xsd:complexType name="ObterFuncionarioPrestadorResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="dadosFuncPrest">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPapelPessoa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePapelPessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoCargo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresa" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEstruturaCargo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAdmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataDesligamento" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroMatricula" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoPrestadorSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoPrestador" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoPrestador" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!-- ************OBTER LISTA CONTRATOS************** -->
+<xsd:element name="obterListaContratos" type="xsdLocal1:ObterListaContratosType"/>
+<xsd:complexType name="ObterListaContratosType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="filtroContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="produto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoOrigem" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaProduto">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProduto" type="xsd:short"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="listaSegmento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSegmento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="codigoSituacaoDocumento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaFinal" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="diaVigenciaInicial" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroClienteSistemaOrigem" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="periodoDataEmissao">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="inicioDataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="finalDataEmissao" type="xsd:dateTime"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="chassi" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="placa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="suseps">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterListaContratosResponse" type="xsdLocal1:ObterListaContratosResponseType"/>
+<xsd:complexType name="ObterListaContratosResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="contratos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemProposta" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoProposta" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoCanalVenda" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCanalVenda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresaQuemEmitiu" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresaQuemEmitiu" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSusep" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContratoSistemaOrigem" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoContrato" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoContrato" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!--
+************OBTER DADOS VEICULO - INI**************
+-->
+<xsd:element name="obterDadosVeiculo" type="xsdLocal1:ObterDadosVeiculoType"/>
+<xsd:complexType name="ObterDadosVeiculoType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroCpfouCnpj" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroOrdemCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="digitoCpfouCnpj" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="registroNacionalEstrangeiro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="placa" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="obterDadosVeiculoResponse" type="xsdLocal1:ObterDadosVeiculoResponseType"/>
+<xsd:complexType name="ObterDadosVeiculoResponseType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="pessoa">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="retorno" type="xsdLocal1:RetornoType"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomePessoa" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="contratos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="chaveDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="chave" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="valor" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoProdutoBcp" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeProdutoBcp" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataEmissao" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItemSistemaOrigem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroDigitoEndosso" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataInicioVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataFinalVigencia" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoEmpresaEmissao" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeEmpresaEmissao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoSituacaoContrato" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeSituacaoContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="veiculo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="placaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoFabricacaoVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="anoModeloVeiculo" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeMarcaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeModeloVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroChassiVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroItem" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLicencaVeiculo" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequenciaDocumento" type="xsd:short"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="telefones">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdd" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoDdi" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoTipoTelefone" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoTipoTelefone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroPessoa" type="xsd:long"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroTelefone" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="enderecosContrato">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoFinalidadeEndereco" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="descricaoFinalidadeEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoOrigemMovimento" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="codigoUnidadeFederacao" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="complementoEndereco" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAtualizacaoRegistro" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="dataAutorizacaoPropaganda" type="xsd:dateTime"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagAutorizacaoPropaganda" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaEnderecoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="flagNivelConfiancaLocalizacaoAtingido" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="indiceSucessoEntregaCorrespondencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeBairro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeCidade" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeOrigemMovimento" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="nomeTipoLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroComplementoCep" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroContrato" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroInicioCep" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLatitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLogradouro" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroLongitudeDecimal" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="numeroSequencia" type="xsd:short"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="percentualConfiancaEndereco" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="siglaPais" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+ <!--
+************OBTER DADOS VEICULO - FIM**************
+-->
+</xsd:schema>

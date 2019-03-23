@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2019.03.23 às 05:40:36 PM BRT 
+
+  -->
+  <bindings xmlns:tns="http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.portoseguro.ws.schema"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ObterDadosVeiculoResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterDadosVeiculoResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterListaContratosResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterListaContratosResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterListaContratosType">
+      <class ref="br.com.portoseguro.ws.schema.ObterListaContratosType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterFuncionarioPrestadorResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterFuncionarioPrestadorResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterCorretorResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterCorretorResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterDadosCnaeResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterDadosCnaeResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasCompletoResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasCompletoResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPapeisPessoasResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPapeisPessoasResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterContratoCompletoResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterContratoCompletoResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterContratoCompletoType">
+      <class ref="br.com.portoseguro.ws.schema.ObterContratoCompletoType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasContratosCompletoResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasContratosCompletoResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasContratosCompletoType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasContratosCompletoType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterContratoResponseType">
+      <class ref="br.com.portoseguro.ws.schema.ObterContratoResponseType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterContratoType">
+      <class ref="br.com.portoseguro.ws.schema.ObterContratoType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPapeisPessoasType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPapeisPessoasType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterPessoasCompletoType">
+      <class ref="br.com.portoseguro.ws.schema.ObterPessoasCompletoType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterDadosCnaeType">
+      <class ref="br.com.portoseguro.ws.schema.ObterDadosCnaeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterCorretorType">
+      <class ref="br.com.portoseguro.ws.schema.ObterCorretorType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterFuncionarioPrestadorType">
+      <class ref="br.com.portoseguro.ws.schema.ObterFuncionarioPrestadorType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ObterDadosVeiculoType">
+      <class ref="br.com.portoseguro.ws.schema.ObterDadosVeiculoType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RetornoType">
+      <class ref="br.com.portoseguro.ws.schema.RetornoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://www.portoseguro.com.br/foundation/PortoSeguroMessage" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.portoseguro.ws.schema"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:PortoSeguroFaultInfoType">
+      <class ref="br.com.portoseguro.ws.schema.PortoSeguroFaultInfoType"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="http://www.portoseguro.com.br/ebo/Common/V1_0" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.portoseguro.ws.schema"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ExtensionType">
+      <class ref="br.com.portoseguro.ws.schema.ExtensionType"/>
+    </bindings>
+  </bindings>
+</bindings>
