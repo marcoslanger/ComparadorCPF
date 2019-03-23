@@ -1,10 +1,3 @@
-//
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
-// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2019.03.23 às 06:12:57 PM BRT 
-//
-
 
 package br.com.portoseguro.ws.schema;
 
@@ -19,35 +12,35 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * 
- * Elemento usado para encapsular informações de falhas na execucao de servicos.
+ * Elemento usado para encapsular informa��es de falhas na execucao de servicos.
  * 
  * 
  * <p>Classe Java de PortoSeguroFaultInfoType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="PortoSeguroFaultInfoType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
- *         &lt;element name="mensagem" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="dataOcorrencia" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
- *         &lt;element name="fonte" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="tipo"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;enumeration value="NEGOCIO"/&gt;
- *               &lt;enumeration value="SISTEMA"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="additionalInfo" type="{http://www.portoseguro.com.br/ebo/Common/V1_0}ExtensionType"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
+ * &lt;complexType name="PortoSeguroFaultInfoType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         &lt;element name="mensagem" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="dataOcorrencia" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+ *         &lt;element name="fonte" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="tipo">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;enumeration value="NEGOCIO"/>
+ *               &lt;enumeration value="SISTEMA"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="additionalInfo" type="{http://www.portoseguro.com.br/ebo/Common/V1_0}ExtensionType"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
  * </pre>
  * 
  * 
@@ -78,7 +71,7 @@ public class PortoSeguroFaultInfoType {
     protected ExtensionType additionalInfo;
 
     /**
-     * Obtém o valor da propriedade codigo.
+     * Obt�m o valor da propriedade codigo.
      * 
      * @return
      *     possible object is
@@ -102,7 +95,7 @@ public class PortoSeguroFaultInfoType {
     }
 
     /**
-     * Obtém o valor da propriedade mensagem.
+     * Obt�m o valor da propriedade mensagem.
      * 
      * @return
      *     possible object is
@@ -126,7 +119,7 @@ public class PortoSeguroFaultInfoType {
     }
 
     /**
-     * Obtém o valor da propriedade dataOcorrencia.
+     * Obt�m o valor da propriedade dataOcorrencia.
      * 
      * @return
      *     possible object is
@@ -150,7 +143,7 @@ public class PortoSeguroFaultInfoType {
     }
 
     /**
-     * Obtém o valor da propriedade fonte.
+     * Obt�m o valor da propriedade fonte.
      * 
      * @return
      *     possible object is
@@ -174,7 +167,7 @@ public class PortoSeguroFaultInfoType {
     }
 
     /**
-     * Obtém o valor da propriedade tipo.
+     * Obt�m o valor da propriedade tipo.
      * 
      * @return
      *     possible object is
@@ -198,7 +191,7 @@ public class PortoSeguroFaultInfoType {
     }
 
     /**
-     * Obtém o valor da propriedade additionalInfo.
+     * Obt�m o valor da propriedade additionalInfo.
      * 
      * @return
      *     possible object is

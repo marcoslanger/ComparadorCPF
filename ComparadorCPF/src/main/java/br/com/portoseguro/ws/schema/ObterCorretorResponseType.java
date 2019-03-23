@@ -1,10 +1,3 @@
-//
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
-// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2019.03.23 às 06:12:57 PM BRT 
-//
-
 
 package br.com.portoseguro.ws.schema;
 
@@ -20,32 +13,32 @@ import javax.xml.datatype.XMLGregorianCalendar;
 /**
  * <p>Classe Java de ObterCorretorResponseType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterCorretorResponseType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="corretor" maxOccurs="unbounded" minOccurs="0"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *                   &lt;element name="nomeFantasiaCorretor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *                   &lt;element name="dataInicioRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
- *                   &lt;element name="dataFinalRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
- *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
+ * &lt;complexType name="ObterCorretorResponseType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="corretor" maxOccurs="unbounded" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                   &lt;element name="nomeFantasiaCorretor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                   &lt;element name="dataInicioRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *                   &lt;element name="dataFinalRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
  * </pre>
  * 
  * 
@@ -91,22 +84,22 @@ public class ObterCorretorResponseType {
     /**
      * <p>Classe Java de anonymous complex type.
      * 
-     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+     * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
      * 
      * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
-     *         &lt;element name="nomeFantasiaCorretor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
-     *         &lt;element name="dataInicioRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
-     *         &lt;element name="dataFinalRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
-     *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *         &lt;element name="nomeFantasiaCorretor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *         &lt;element name="dataInicioRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+     *         &lt;element name="dataFinalRelacionamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+     *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
      * </pre>
      * 
      * 
@@ -130,7 +123,7 @@ public class ObterCorretorResponseType {
         protected Short numeroSequencia;
 
         /**
-         * Obtém o valor da propriedade codigoSusep.
+         * Obt�m o valor da propriedade codigoSusep.
          * 
          * @return
          *     possible object is
@@ -154,7 +147,7 @@ public class ObterCorretorResponseType {
         }
 
         /**
-         * Obtém o valor da propriedade nomeFantasiaCorretor.
+         * Obt�m o valor da propriedade nomeFantasiaCorretor.
          * 
          * @return
          *     possible object is
@@ -178,7 +171,7 @@ public class ObterCorretorResponseType {
         }
 
         /**
-         * Obtém o valor da propriedade dataInicioRelacionamento.
+         * Obt�m o valor da propriedade dataInicioRelacionamento.
          * 
          * @return
          *     possible object is
@@ -202,7 +195,7 @@ public class ObterCorretorResponseType {
         }
 
         /**
-         * Obtém o valor da propriedade dataFinalRelacionamento.
+         * Obt�m o valor da propriedade dataFinalRelacionamento.
          * 
          * @return
          *     possible object is
@@ -226,7 +219,7 @@ public class ObterCorretorResponseType {
         }
 
         /**
-         * Obtém o valor da propriedade numeroSequencia.
+         * Obt�m o valor da propriedade numeroSequencia.
          * 
          * @return
          *     possible object is

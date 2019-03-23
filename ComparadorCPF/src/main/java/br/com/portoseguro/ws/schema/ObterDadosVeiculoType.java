@@ -1,10 +1,3 @@
-//
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
-// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2019.03.23 às 06:12:57 PM BRT 
-//
-
 
 package br.com.portoseguro.ws.schema;
 
@@ -16,22 +9,22 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java de ObterDadosVeiculoType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterDadosVeiculoType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
- *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
- *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
- *         &lt;element name="registroNacionalEstrangeiro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="placa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
+ * &lt;complexType name="ObterDadosVeiculoType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
+ *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
+ *         &lt;element name="registroNacionalEstrangeiro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="placa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
  * </pre>
  * 
  * 
@@ -53,7 +46,7 @@ public class ObterDadosVeiculoType {
     protected String placa;
 
     /**
-     * Obtém o valor da propriedade numeroCpfouCnpj.
+     * Obt�m o valor da propriedade numeroCpfouCnpj.
      * 
      * @return
      *     possible object is
@@ -77,7 +70,7 @@ public class ObterDadosVeiculoType {
     }
 
     /**
-     * Obtém o valor da propriedade numeroOrdemCnpj.
+     * Obt�m o valor da propriedade numeroOrdemCnpj.
      * 
      * @return
      *     possible object is
@@ -101,7 +94,7 @@ public class ObterDadosVeiculoType {
     }
 
     /**
-     * Obtém o valor da propriedade digitoCpfouCnpj.
+     * Obt�m o valor da propriedade digitoCpfouCnpj.
      * 
      * @return
      *     possible object is
@@ -125,7 +118,7 @@ public class ObterDadosVeiculoType {
     }
 
     /**
-     * Obtém o valor da propriedade registroNacionalEstrangeiro.
+     * Obt�m o valor da propriedade registroNacionalEstrangeiro.
      * 
      * @return
      *     possible object is
@@ -149,7 +142,7 @@ public class ObterDadosVeiculoType {
     }
 
     /**
-     * Obtém o valor da propriedade placa.
+     * Obt�m o valor da propriedade placa.
      * 
      * @return
      *     possible object is
