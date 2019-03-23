@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2019.03.23 às 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -24,29 +31,29 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ObterPapeisPessoasResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPapeisPessoasResponse");
-    private final static QName _ObterContratoCompleto_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoCompleto");
-    private final static QName _PortoSeguroFaultInfo_QNAME = new QName("http://www.portoseguro.com.br/foundation/PortoSeguroMessage", "portoSeguroFaultInfo");
-    private final static QName _ObterDadosVeiculo_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosVeiculo");
-    private final static QName _ObterContratoCompletoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoCompletoResponse");
-    private final static QName _ObterCorretorResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterCorretorResponse");
-    private final static QName _ObterContratoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoResponse");
-    private final static QName _ObterListaContratosResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterListaContratosResponse");
-    private final static QName _ObterDadosCnaeResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosCnaeResponse");
     private final static QName _ObterContrato_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContrato");
-    private final static QName _ObterPessoasResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasResponse");
-    private final static QName _ObterFuncionarioPrestadorResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterFuncionarioPrestadorResponse");
-    private final static QName _ObterDadosCnae_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosCnae");
-    private final static QName _ObterPapeisPessoas_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPapeisPessoas");
+    private final static QName _ObterContratoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoResponse");
     private final static QName _ObterPessoasContratosCompleto_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasContratosCompleto");
-    private final static QName _ObterFuncionarioPrestador_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterFuncionarioPrestador");
-    private final static QName _ObterPessoas_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoas");
-    private final static QName _ObterListaContratos_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterListaContratos");
-    private final static QName _ObterCorretor_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterCorretor");
-    private final static QName _ObterPessoasCompletoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasCompletoResponse");
-    private final static QName _ObterDadosVeiculoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosVeiculoResponse");
     private final static QName _ObterPessoasContratosCompletoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasContratosCompletoResponse");
+    private final static QName _ObterContratoCompleto_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoCompleto");
+    private final static QName _ObterContratoCompletoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterContratoCompletoResponse");
+    private final static QName _ObterPapeisPessoas_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPapeisPessoas");
+    private final static QName _ObterPapeisPessoasResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPapeisPessoasResponse");
+    private final static QName _ObterPessoas_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoas");
+    private final static QName _ObterPessoasResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasResponse");
     private final static QName _ObterPessoasCompleto_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasCompleto");
+    private final static QName _ObterPessoasCompletoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterPessoasCompletoResponse");
+    private final static QName _ObterDadosCnae_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosCnae");
+    private final static QName _ObterDadosCnaeResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosCnaeResponse");
+    private final static QName _ObterCorretor_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterCorretor");
+    private final static QName _ObterCorretorResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterCorretorResponse");
+    private final static QName _ObterFuncionarioPrestador_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterFuncionarioPrestador");
+    private final static QName _ObterFuncionarioPrestadorResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterFuncionarioPrestadorResponse");
+    private final static QName _ObterListaContratos_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterListaContratos");
+    private final static QName _ObterListaContratosResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterListaContratosResponse");
+    private final static QName _ObterDadosVeiculo_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosVeiculo");
+    private final static QName _ObterDadosVeiculoResponse_QNAME = new QName("http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", "obterDadosVeiculoResponse");
+    private final static QName _PortoSeguroFaultInfo_QNAME = new QName("http://www.portoseguro.com.br/foundation/PortoSeguroMessage", "portoSeguroFaultInfo");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: br.com.portoseguro.ws.schema
@@ -56,59 +63,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterPessoasResponseType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType }
      * 
      */
-    public ObterPessoasResponseType createObterPessoasResponseType() {
-        return new ObterPessoasResponseType();
+    public ObterDadosVeiculoResponseType createObterDadosVeiculoResponseType() {
+        return new ObterDadosVeiculoResponseType();
     }
 
     /**
-     * Create an instance of {@link ObterPessoasResponseType.Pessoa }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa }
      * 
      */
-    public ObterPessoasResponseType.Pessoa createObterPessoasResponseTypePessoa() {
-        return new ObterPessoasResponseType.Pessoa();
+    public ObterDadosVeiculoResponseType.Pessoa createObterDadosVeiculoResponseTypePessoa() {
+        return new ObterDadosVeiculoResponseType.Pessoa();
     }
 
     /**
-     * Create an instance of {@link ObterContratoType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos }
      * 
      */
-    public ObterContratoType createObterContratoType() {
-        return new ObterContratoType();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato }
-     * 
-     */
-    public ObterContratoType.FiltroContrato createObterContratoTypeFiltroContrato() {
-        return new ObterContratoType.FiltroContrato();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto }
-     * 
-     */
-    public ObterContratoType.FiltroContrato.Produto createObterContratoTypeFiltroContratoProduto() {
-        return new ObterContratoType.FiltroContrato.Produto();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto.ListaProduto }
-     * 
-     */
-    public ObterContratoType.FiltroContrato.Produto.ListaProduto createObterContratoTypeFiltroContratoProdutoListaProduto() {
-        return new ObterContratoType.FiltroContrato.Produto.ListaProduto();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosCnaeResponseType }
-     * 
-     */
-    public ObterDadosCnaeResponseType createObterDadosCnaeResponseType() {
-        return new ObterDadosCnaeResponseType();
+    public ObterDadosVeiculoResponseType.Pessoa.Contratos createObterDadosVeiculoResponseTypePessoaContratos() {
+        return new ObterDadosVeiculoResponseType.Pessoa.Contratos();
     }
 
     /**
@@ -128,27 +103,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterContratoResponseType }
+     * Create an instance of {@link ObterListaContratosType }
      * 
      */
-    public ObterContratoResponseType createObterContratoResponseType() {
-        return new ObterContratoResponseType();
+    public ObterListaContratosType createObterListaContratosType() {
+        return new ObterListaContratosType();
     }
 
     /**
-     * Create an instance of {@link ObterContratoResponseType.Pessoa }
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato }
      * 
      */
-    public ObterContratoResponseType.Pessoa createObterContratoResponseTypePessoa() {
-        return new ObterContratoResponseType.Pessoa();
+    public ObterListaContratosType.FiltroContrato createObterListaContratosTypeFiltroContrato() {
+        return new ObterListaContratosType.FiltroContrato();
     }
 
     /**
-     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos }
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto }
      * 
      */
-    public ObterContratoResponseType.Pessoa.Contratos createObterContratoResponseTypePessoaContratos() {
-        return new ObterContratoResponseType.Pessoa.Contratos();
+    public ObterListaContratosType.FiltroContrato.Produto createObterListaContratosTypeFiltroContratoProduto() {
+        return new ObterListaContratosType.FiltroContrato.Produto();
+    }
+
+    /**
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto.ListaProduto }
+     * 
+     */
+    public ObterListaContratosType.FiltroContrato.Produto.ListaProduto createObterListaContratosTypeFiltroContratoProdutoListaProduto() {
+        return new ObterListaContratosType.FiltroContrato.Produto.ListaProduto();
+    }
+
+    /**
+     * Create an instance of {@link ObterFuncionarioPrestadorResponseType }
+     * 
+     */
+    public ObterFuncionarioPrestadorResponseType createObterFuncionarioPrestadorResponseType() {
+        return new ObterFuncionarioPrestadorResponseType();
     }
 
     /**
@@ -157,6 +148,70 @@ public class ObjectFactory {
      */
     public ObterCorretorResponseType createObterCorretorResponseType() {
         return new ObterCorretorResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterDadosCnaeResponseType }
+     * 
+     */
+    public ObterDadosCnaeResponseType createObterDadosCnaeResponseType() {
+        return new ObterDadosCnaeResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType }
+     * 
+     */
+    public ObterPessoasCompletoResponseType createObterPessoasCompletoResponseType() {
+        return new ObterPessoasCompletoResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa createObterPessoasCompletoResponseTypePessoa() {
+        return new ObterPessoasCompletoResponseType.Pessoa();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Fisica createObterPessoasCompletoResponseTypePessoaFisica() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Fisica();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasResponseType }
+     * 
+     */
+    public ObterPessoasResponseType createObterPessoasResponseType() {
+        return new ObterPessoasResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasResponseType.Pessoa }
+     * 
+     */
+    public ObterPessoasResponseType.Pessoa createObterPessoasResponseTypePessoa() {
+        return new ObterPessoasResponseType.Pessoa();
+    }
+
+    /**
+     * Create an instance of {@link ObterPapeisPessoasResponseType }
+     * 
+     */
+    public ObterPapeisPessoasResponseType createObterPapeisPessoasResponseType() {
+        return new ObterPapeisPessoasResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPapeisPessoasResponseType.Pessoa }
+     * 
+     */
+    public ObterPapeisPessoasResponseType.Pessoa createObterPapeisPessoasResponseTypePessoa() {
+        return new ObterPapeisPessoasResponseType.Pessoa();
     }
 
     /**
@@ -232,22 +287,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterPapeisPessoasResponseType }
-     * 
-     */
-    public ObterPapeisPessoasResponseType createObterPapeisPessoasResponseType() {
-        return new ObterPapeisPessoasResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ObterPapeisPessoasResponseType.Pessoa }
-     * 
-     */
-    public ObterPapeisPessoasResponseType.Pessoa createObterPapeisPessoasResponseTypePessoa() {
-        return new ObterPapeisPessoasResponseType.Pessoa();
-    }
-
-    /**
      * Create an instance of {@link ObterPessoasContratosCompletoResponseType }
      * 
      */
@@ -296,86 +335,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType }
-     * 
-     */
-    public ObterDadosVeiculoResponseType createObterDadosVeiculoResponseType() {
-        return new ObterDadosVeiculoResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa createObterDadosVeiculoResponseTypePessoa() {
-        return new ObterDadosVeiculoResponseType.Pessoa();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa.Contratos createObterDadosVeiculoResponseTypePessoaContratos() {
-        return new ObterDadosVeiculoResponseType.Pessoa.Contratos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType }
-     * 
-     */
-    public ObterPessoasCompletoResponseType createObterPessoasCompletoResponseType() {
-        return new ObterPessoasCompletoResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa createObterPessoasCompletoResponseTypePessoa() {
-        return new ObterPessoasCompletoResponseType.Pessoa();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Fisica createObterPessoasCompletoResponseTypePessoaFisica() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Fisica();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType }
-     * 
-     */
-    public ObterListaContratosType createObterListaContratosType() {
-        return new ObterListaContratosType();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato createObterListaContratosTypeFiltroContrato() {
-        return new ObterListaContratosType.FiltroContrato();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato.Produto createObterListaContratosTypeFiltroContratoProduto() {
-        return new ObterListaContratosType.FiltroContrato.Produto();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto.ListaProduto }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato.Produto.ListaProduto createObterListaContratosTypeFiltroContratoProdutoListaProduto() {
-        return new ObterListaContratosType.FiltroContrato.Produto.ListaProduto();
-    }
-
-    /**
      * Create an instance of {@link ObterPessoasContratosCompletoType }
      * 
      */
@@ -408,11 +367,123 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterFuncionarioPrestadorResponseType }
+     * Create an instance of {@link ObterContratoResponseType }
      * 
      */
-    public ObterFuncionarioPrestadorResponseType createObterFuncionarioPrestadorResponseType() {
-        return new ObterFuncionarioPrestadorResponseType();
+    public ObterContratoResponseType createObterContratoResponseType() {
+        return new ObterContratoResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoResponseType.Pessoa }
+     * 
+     */
+    public ObterContratoResponseType.Pessoa createObterContratoResponseTypePessoa() {
+        return new ObterContratoResponseType.Pessoa();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos }
+     * 
+     */
+    public ObterContratoResponseType.Pessoa.Contratos createObterContratoResponseTypePessoaContratos() {
+        return new ObterContratoResponseType.Pessoa.Contratos();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoType }
+     * 
+     */
+    public ObterContratoType createObterContratoType() {
+        return new ObterContratoType();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoType.FiltroContrato }
+     * 
+     */
+    public ObterContratoType.FiltroContrato createObterContratoTypeFiltroContrato() {
+        return new ObterContratoType.FiltroContrato();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto }
+     * 
+     */
+    public ObterContratoType.FiltroContrato.Produto createObterContratoTypeFiltroContratoProduto() {
+        return new ObterContratoType.FiltroContrato.Produto();
+    }
+
+    /**
+     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto.ListaProduto }
+     * 
+     */
+    public ObterContratoType.FiltroContrato.Produto.ListaProduto createObterContratoTypeFiltroContratoProdutoListaProduto() {
+        return new ObterContratoType.FiltroContrato.Produto.ListaProduto();
+    }
+
+    /**
+     * Create an instance of {@link ObterPapeisPessoasType }
+     * 
+     */
+    public ObterPapeisPessoasType createObterPapeisPessoasType() {
+        return new ObterPapeisPessoasType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasType }
+     * 
+     */
+    public ObterPessoasType createObterPessoasType() {
+        return new ObterPessoasType();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoType }
+     * 
+     */
+    public ObterPessoasCompletoType createObterPessoasCompletoType() {
+        return new ObterPessoasCompletoType();
+    }
+
+    /**
+     * Create an instance of {@link ObterDadosCnaeType }
+     * 
+     */
+    public ObterDadosCnaeType createObterDadosCnaeType() {
+        return new ObterDadosCnaeType();
+    }
+
+    /**
+     * Create an instance of {@link ObterCorretorType }
+     * 
+     */
+    public ObterCorretorType createObterCorretorType() {
+        return new ObterCorretorType();
+    }
+
+    /**
+     * Create an instance of {@link ObterFuncionarioPrestadorType }
+     * 
+     */
+    public ObterFuncionarioPrestadorType createObterFuncionarioPrestadorType() {
+        return new ObterFuncionarioPrestadorType();
+    }
+
+    /**
+     * Create an instance of {@link ObterDadosVeiculoType }
+     * 
+     */
+    public ObterDadosVeiculoType createObterDadosVeiculoType() {
+        return new ObterDadosVeiculoType();
+    }
+
+    /**
+     * Create an instance of {@link RetornoType }
+     * 
+     */
+    public RetornoType createRetornoType() {
+        return new RetornoType();
     }
 
     /**
@@ -432,67 +503,195 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterDadosCnaeType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento }
      * 
      */
-    public ObterDadosCnaeType createObterDadosCnaeType() {
-        return new ObterDadosCnaeType();
+    public ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento createObterDadosVeiculoResponseTypePessoaContratosChaveDocumento() {
+        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento();
     }
 
     /**
-     * Create an instance of {@link ObterPapeisPessoasType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo }
      * 
      */
-    public ObterPapeisPessoasType createObterPapeisPessoasType() {
-        return new ObterPapeisPessoasType();
+    public ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo createObterDadosVeiculoResponseTypePessoaContratosVeiculo() {
+        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo();
     }
 
     /**
-     * Create an instance of {@link ObterFuncionarioPrestadorType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones }
      * 
      */
-    public ObterFuncionarioPrestadorType createObterFuncionarioPrestadorType() {
-        return new ObterFuncionarioPrestadorType();
+    public ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones createObterDadosVeiculoResponseTypePessoaContratosTelefones() {
+        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones();
     }
 
     /**
-     * Create an instance of {@link ObterPessoasType }
+     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato }
      * 
      */
-    public ObterPessoasType createObterPessoasType() {
-        return new ObterPessoasType();
+    public ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato createObterDadosVeiculoResponseTypePessoaContratosEnderecosContrato() {
+        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato();
     }
 
     /**
-     * Create an instance of {@link ObterCorretorType }
+     * Create an instance of {@link ObterListaContratosResponseType.Contratos.ChaveDocumento }
      * 
      */
-    public ObterCorretorType createObterCorretorType() {
-        return new ObterCorretorType();
+    public ObterListaContratosResponseType.Contratos.ChaveDocumento createObterListaContratosResponseTypeContratosChaveDocumento() {
+        return new ObterListaContratosResponseType.Contratos.ChaveDocumento();
     }
 
     /**
-     * Create an instance of {@link ObterPessoasCompletoType }
+     * Create an instance of {@link ObterListaContratosType.Suseps }
      * 
      */
-    public ObterPessoasCompletoType createObterPessoasCompletoType() {
-        return new ObterPessoasCompletoType();
+    public ObterListaContratosType.Suseps createObterListaContratosTypeSuseps() {
+        return new ObterListaContratosType.Suseps();
     }
 
     /**
-     * Create an instance of {@link ObterDadosVeiculoType }
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato.ChaveDocumento }
      * 
      */
-    public ObterDadosVeiculoType createObterDadosVeiculoType() {
-        return new ObterDadosVeiculoType();
+    public ObterListaContratosType.FiltroContrato.ChaveDocumento createObterListaContratosTypeFiltroContratoChaveDocumento() {
+        return new ObterListaContratosType.FiltroContrato.ChaveDocumento();
     }
 
     /**
-     * Create an instance of {@link RetornoType }
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato.PeriodoDataEmissao }
      * 
      */
-    public RetornoType createRetornoType() {
-        return new RetornoType();
+    public ObterListaContratosType.FiltroContrato.PeriodoDataEmissao createObterListaContratosTypeFiltroContratoPeriodoDataEmissao() {
+        return new ObterListaContratosType.FiltroContrato.PeriodoDataEmissao();
+    }
+
+    /**
+     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento }
+     * 
+     */
+    public ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento createObterListaContratosTypeFiltroContratoProdutoListaProdutoListaSegmento() {
+        return new ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento();
+    }
+
+    /**
+     * Create an instance of {@link ObterFuncionarioPrestadorResponseType.DadosFuncPrest }
+     * 
+     */
+    public ObterFuncionarioPrestadorResponseType.DadosFuncPrest createObterFuncionarioPrestadorResponseTypeDadosFuncPrest() {
+        return new ObterFuncionarioPrestadorResponseType.DadosFuncPrest();
+    }
+
+    /**
+     * Create an instance of {@link ObterCorretorResponseType.Corretor }
+     * 
+     */
+    public ObterCorretorResponseType.Corretor createObterCorretorResponseTypeCorretor() {
+        return new ObterCorretorResponseType.Corretor();
+    }
+
+    /**
+     * Create an instance of {@link ObterDadosCnaeResponseType.DadosCnae }
+     * 
+     */
+    public ObterDadosCnaeResponseType.DadosCnae createObterDadosCnaeResponseTypeDadosCnae() {
+        return new ObterDadosCnaeResponseType.DadosCnae();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos createObterPessoasCompletoResponseTypePessoaAcessosRestritos() {
+        return new ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Documentos }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Documentos createObterPessoasCompletoResponseTypePessoaDocumentos() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Documentos();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Enderecos }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Enderecos createObterPessoasCompletoResponseTypePessoaEnderecos() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Enderecos();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos createObterPessoasCompletoResponseTypePessoaEnderecosEletronicos() {
+        return new ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Juridica }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Juridica createObterPessoasCompletoResponseTypePessoaJuridica() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Juridica();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa createObterPessoasCompletoResponseTypePessoaPapeisPessoa() {
+        return new ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Telefones }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Telefones createObterPessoasCompletoResponseTypePessoaTelefones() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Telefones();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Vinculos }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Vinculos createObterPessoasCompletoResponseTypePessoaVinculos() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Vinculos();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.MidiasSociais }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.MidiasSociais createObterPessoasCompletoResponseTypePessoaMidiasSociais() {
+        return new ObterPessoasCompletoResponseType.Pessoa.MidiasSociais();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas createObterPessoasCompletoResponseTypePessoaFisicaDeficienciasFisicas() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes createObterPessoasCompletoResponseTypePessoaFisicaOcupacoes() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes();
+    }
+
+    /**
+     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep }
+     * 
+     */
+    public ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep createObterPessoasCompletoResponseTypePessoaFisicaVinculosPep() {
+        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep();
     }
 
     /**
@@ -552,83 +751,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterContratoType.Suseps }
+     * Create an instance of {@link ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa }
      * 
      */
-    public ObterContratoType.Suseps createObterContratoTypeSuseps() {
-        return new ObterContratoType.Suseps();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato.ChaveDocumento }
-     * 
-     */
-    public ObterContratoType.FiltroContrato.ChaveDocumento createObterContratoTypeFiltroContratoChaveDocumento() {
-        return new ObterContratoType.FiltroContrato.ChaveDocumento();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato.PeriodoDataEmissao }
-     * 
-     */
-    public ObterContratoType.FiltroContrato.PeriodoDataEmissao createObterContratoTypeFiltroContratoPeriodoDataEmissao() {
-        return new ObterContratoType.FiltroContrato.PeriodoDataEmissao();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento }
-     * 
-     */
-    public ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento createObterContratoTypeFiltroContratoProdutoListaProdutoListaSegmento() {
-        return new ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosCnaeResponseType.DadosCnae }
-     * 
-     */
-    public ObterDadosCnaeResponseType.DadosCnae createObterDadosCnaeResponseTypeDadosCnae() {
-        return new ObterDadosCnaeResponseType.DadosCnae();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosResponseType.Contratos.ChaveDocumento }
-     * 
-     */
-    public ObterListaContratosResponseType.Contratos.ChaveDocumento createObterListaContratosResponseTypeContratosChaveDocumento() {
-        return new ObterListaContratosResponseType.Contratos.ChaveDocumento();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoResponseType.Pessoa.Documentos }
-     * 
-     */
-    public ObterContratoResponseType.Pessoa.Documentos createObterContratoResponseTypePessoaDocumentos() {
-        return new ObterContratoResponseType.Pessoa.Documentos();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento }
-     * 
-     */
-    public ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento createObterContratoResponseTypePessoaContratosChaveDocumento() {
-        return new ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento();
-    }
-
-    /**
-     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato }
-     * 
-     */
-    public ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato createObterContratoResponseTypePessoaContratosPapelPessoaContrato() {
-        return new ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato();
-    }
-
-    /**
-     * Create an instance of {@link ObterCorretorResponseType.Corretor }
-     * 
-     */
-    public ObterCorretorResponseType.Corretor createObterCorretorResponseTypeCorretor() {
-        return new ObterCorretorResponseType.Corretor();
+    public ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa createObterPapeisPessoasResponseTypePessoaPapeisPessoa() {
+        return new ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa();
     }
 
     /**
@@ -765,14 +892,6 @@ public class ObjectFactory {
      */
     public ObterContratoCompletoType.FiltroContrato.Produto.ListaProduto.ListaSegmento createObterContratoCompletoTypeFiltroContratoProdutoListaProdutoListaSegmento() {
         return new ObterContratoCompletoType.FiltroContrato.Produto.ListaProduto.ListaSegmento();
-    }
-
-    /**
-     * Create an instance of {@link ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa }
-     * 
-     */
-    public ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa createObterPapeisPessoasResponseTypePessoaPapeisPessoa() {
-        return new ObterPapeisPessoasResponseType.Pessoa.PapeisPessoa();
     }
 
     /**
@@ -968,166 +1087,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento createObterDadosVeiculoResponseTypePessoaContratosChaveDocumento() {
-        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.ChaveDocumento();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo createObterDadosVeiculoResponseTypePessoaContratosVeiculo() {
-        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.Veiculo();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones createObterDadosVeiculoResponseTypePessoaContratosTelefones() {
-        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.Telefones();
-    }
-
-    /**
-     * Create an instance of {@link ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato }
-     * 
-     */
-    public ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato createObterDadosVeiculoResponseTypePessoaContratosEnderecosContrato() {
-        return new ObterDadosVeiculoResponseType.Pessoa.Contratos.EnderecosContrato();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos createObterPessoasCompletoResponseTypePessoaAcessosRestritos() {
-        return new ObterPessoasCompletoResponseType.Pessoa.AcessosRestritos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Documentos }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Documentos createObterPessoasCompletoResponseTypePessoaDocumentos() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Documentos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Enderecos }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Enderecos createObterPessoasCompletoResponseTypePessoaEnderecos() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Enderecos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos createObterPessoasCompletoResponseTypePessoaEnderecosEletronicos() {
-        return new ObterPessoasCompletoResponseType.Pessoa.EnderecosEletronicos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Juridica }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Juridica createObterPessoasCompletoResponseTypePessoaJuridica() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Juridica();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa createObterPessoasCompletoResponseTypePessoaPapeisPessoa() {
-        return new ObterPessoasCompletoResponseType.Pessoa.PapeisPessoa();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Telefones }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Telefones createObterPessoasCompletoResponseTypePessoaTelefones() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Telefones();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Vinculos }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Vinculos createObterPessoasCompletoResponseTypePessoaVinculos() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Vinculos();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.MidiasSociais }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.MidiasSociais createObterPessoasCompletoResponseTypePessoaMidiasSociais() {
-        return new ObterPessoasCompletoResponseType.Pessoa.MidiasSociais();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas createObterPessoasCompletoResponseTypePessoaFisicaDeficienciasFisicas() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.DeficienciasFisicas();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes createObterPessoasCompletoResponseTypePessoaFisicaOcupacoes() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.Ocupacoes();
-    }
-
-    /**
-     * Create an instance of {@link ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep }
-     * 
-     */
-    public ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep createObterPessoasCompletoResponseTypePessoaFisicaVinculosPep() {
-        return new ObterPessoasCompletoResponseType.Pessoa.Fisica.VinculosPep();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.Suseps }
-     * 
-     */
-    public ObterListaContratosType.Suseps createObterListaContratosTypeSuseps() {
-        return new ObterListaContratosType.Suseps();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato.ChaveDocumento }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato.ChaveDocumento createObterListaContratosTypeFiltroContratoChaveDocumento() {
-        return new ObterListaContratosType.FiltroContrato.ChaveDocumento();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato.PeriodoDataEmissao }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato.PeriodoDataEmissao createObterListaContratosTypeFiltroContratoPeriodoDataEmissao() {
-        return new ObterListaContratosType.FiltroContrato.PeriodoDataEmissao();
-    }
-
-    /**
-     * Create an instance of {@link ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento }
-     * 
-     */
-    public ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento createObterListaContratosTypeFiltroContratoProdutoListaProdutoListaSegmento() {
-        return new ObterListaContratosType.FiltroContrato.Produto.ListaProduto.ListaSegmento();
-    }
-
-    /**
      * Create an instance of {@link ObterPessoasContratosCompletoType.Suseps }
      * 
      */
@@ -1160,92 +1119,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObterFuncionarioPrestadorResponseType.DadosFuncPrest }
+     * Create an instance of {@link ObterContratoResponseType.Pessoa.Documentos }
      * 
      */
-    public ObterFuncionarioPrestadorResponseType.DadosFuncPrest createObterFuncionarioPrestadorResponseTypeDadosFuncPrest() {
-        return new ObterFuncionarioPrestadorResponseType.DadosFuncPrest();
+    public ObterContratoResponseType.Pessoa.Documentos createObterContratoResponseTypePessoaDocumentos() {
+        return new ObterContratoResponseType.Pessoa.Documentos();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPapeisPessoasResponseType }{@code >}}
+     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPapeisPessoasResponse")
-    public JAXBElement<ObterPapeisPessoasResponseType> createObterPapeisPessoasResponse(ObterPapeisPessoasResponseType value) {
-        return new JAXBElement<ObterPapeisPessoasResponseType>(_ObterPapeisPessoasResponse_QNAME, ObterPapeisPessoasResponseType.class, null, value);
+    public ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento createObterContratoResponseTypePessoaContratosChaveDocumento() {
+        return new ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoCompletoType }{@code >}}
+     * Create an instance of {@link ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoCompleto")
-    public JAXBElement<ObterContratoCompletoType> createObterContratoCompleto(ObterContratoCompletoType value) {
-        return new JAXBElement<ObterContratoCompletoType>(_ObterContratoCompleto_QNAME, ObterContratoCompletoType.class, null, value);
+    public ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato createObterContratoResponseTypePessoaContratosPapelPessoaContrato() {
+        return new ObterContratoResponseType.Pessoa.Contratos.PapelPessoaContrato();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PortoSeguroFaultInfoType }{@code >}}
+     * Create an instance of {@link ObterContratoType.Suseps }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/foundation/PortoSeguroMessage", name = "portoSeguroFaultInfo")
-    public JAXBElement<PortoSeguroFaultInfoType> createPortoSeguroFaultInfo(PortoSeguroFaultInfoType value) {
-        return new JAXBElement<PortoSeguroFaultInfoType>(_PortoSeguroFaultInfo_QNAME, PortoSeguroFaultInfoType.class, null, value);
+    public ObterContratoType.Suseps createObterContratoTypeSuseps() {
+        return new ObterContratoType.Suseps();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosVeiculoType }{@code >}}
+     * Create an instance of {@link ObterContratoType.FiltroContrato.ChaveDocumento }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosVeiculo")
-    public JAXBElement<ObterDadosVeiculoType> createObterDadosVeiculo(ObterDadosVeiculoType value) {
-        return new JAXBElement<ObterDadosVeiculoType>(_ObterDadosVeiculo_QNAME, ObterDadosVeiculoType.class, null, value);
+    public ObterContratoType.FiltroContrato.ChaveDocumento createObterContratoTypeFiltroContratoChaveDocumento() {
+        return new ObterContratoType.FiltroContrato.ChaveDocumento();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoCompletoResponseType }{@code >}}
+     * Create an instance of {@link ObterContratoType.FiltroContrato.PeriodoDataEmissao }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoCompletoResponse")
-    public JAXBElement<ObterContratoCompletoResponseType> createObterContratoCompletoResponse(ObterContratoCompletoResponseType value) {
-        return new JAXBElement<ObterContratoCompletoResponseType>(_ObterContratoCompletoResponse_QNAME, ObterContratoCompletoResponseType.class, null, value);
+    public ObterContratoType.FiltroContrato.PeriodoDataEmissao createObterContratoTypeFiltroContratoPeriodoDataEmissao() {
+        return new ObterContratoType.FiltroContrato.PeriodoDataEmissao();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterCorretorResponseType }{@code >}}
+     * Create an instance of {@link ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento }
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterCorretorResponse")
-    public JAXBElement<ObterCorretorResponseType> createObterCorretorResponse(ObterCorretorResponseType value) {
-        return new JAXBElement<ObterCorretorResponseType>(_ObterCorretorResponse_QNAME, ObterCorretorResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoResponse")
-    public JAXBElement<ObterContratoResponseType> createObterContratoResponse(ObterContratoResponseType value) {
-        return new JAXBElement<ObterContratoResponseType>(_ObterContratoResponse_QNAME, ObterContratoResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterListaContratosResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterListaContratosResponse")
-    public JAXBElement<ObterListaContratosResponseType> createObterListaContratosResponse(ObterListaContratosResponseType value) {
-        return new JAXBElement<ObterListaContratosResponseType>(_ObterListaContratosResponse_QNAME, ObterListaContratosResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosCnaeResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosCnaeResponse")
-    public JAXBElement<ObterDadosCnaeResponseType> createObterDadosCnaeResponse(ObterDadosCnaeResponseType value) {
-        return new JAXBElement<ObterDadosCnaeResponseType>(_ObterDadosCnaeResponse_QNAME, ObterDadosCnaeResponseType.class, null, value);
+    public ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento createObterContratoTypeFiltroContratoProdutoListaProdutoListaSegmento() {
+        return new ObterContratoType.FiltroContrato.Produto.ListaProduto.ListaSegmento();
     }
 
     /**
@@ -1258,39 +1184,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasResponseType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoResponseType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasResponse")
-    public JAXBElement<ObterPessoasResponseType> createObterPessoasResponse(ObterPessoasResponseType value) {
-        return new JAXBElement<ObterPessoasResponseType>(_ObterPessoasResponse_QNAME, ObterPessoasResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterFuncionarioPrestadorResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterFuncionarioPrestadorResponse")
-    public JAXBElement<ObterFuncionarioPrestadorResponseType> createObterFuncionarioPrestadorResponse(ObterFuncionarioPrestadorResponseType value) {
-        return new JAXBElement<ObterFuncionarioPrestadorResponseType>(_ObterFuncionarioPrestadorResponse_QNAME, ObterFuncionarioPrestadorResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosCnaeType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosCnae")
-    public JAXBElement<ObterDadosCnaeType> createObterDadosCnae(ObterDadosCnaeType value) {
-        return new JAXBElement<ObterDadosCnaeType>(_ObterDadosCnae_QNAME, ObterDadosCnaeType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPapeisPessoasType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPapeisPessoas")
-    public JAXBElement<ObterPapeisPessoasType> createObterPapeisPessoas(ObterPapeisPessoasType value) {
-        return new JAXBElement<ObterPapeisPessoasType>(_ObterPapeisPessoas_QNAME, ObterPapeisPessoasType.class, null, value);
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoResponse")
+    public JAXBElement<ObterContratoResponseType> createObterContratoResponse(ObterContratoResponseType value) {
+        return new JAXBElement<ObterContratoResponseType>(_ObterContratoResponse_QNAME, ObterContratoResponseType.class, null, value);
     }
 
     /**
@@ -1303,12 +1202,48 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterFuncionarioPrestadorType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasContratosCompletoResponseType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterFuncionarioPrestador")
-    public JAXBElement<ObterFuncionarioPrestadorType> createObterFuncionarioPrestador(ObterFuncionarioPrestadorType value) {
-        return new JAXBElement<ObterFuncionarioPrestadorType>(_ObterFuncionarioPrestador_QNAME, ObterFuncionarioPrestadorType.class, null, value);
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasContratosCompletoResponse")
+    public JAXBElement<ObterPessoasContratosCompletoResponseType> createObterPessoasContratosCompletoResponse(ObterPessoasContratosCompletoResponseType value) {
+        return new JAXBElement<ObterPessoasContratosCompletoResponseType>(_ObterPessoasContratosCompletoResponse_QNAME, ObterPessoasContratosCompletoResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoCompletoType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoCompleto")
+    public JAXBElement<ObterContratoCompletoType> createObterContratoCompleto(ObterContratoCompletoType value) {
+        return new JAXBElement<ObterContratoCompletoType>(_ObterContratoCompleto_QNAME, ObterContratoCompletoType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterContratoCompletoResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterContratoCompletoResponse")
+    public JAXBElement<ObterContratoCompletoResponseType> createObterContratoCompletoResponse(ObterContratoCompletoResponseType value) {
+        return new JAXBElement<ObterContratoCompletoResponseType>(_ObterContratoCompletoResponse_QNAME, ObterContratoCompletoResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPapeisPessoasType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPapeisPessoas")
+    public JAXBElement<ObterPapeisPessoasType> createObterPapeisPessoas(ObterPapeisPessoasType value) {
+        return new JAXBElement<ObterPapeisPessoasType>(_ObterPapeisPessoas_QNAME, ObterPapeisPessoasType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPapeisPessoasResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPapeisPessoasResponse")
+    public JAXBElement<ObterPapeisPessoasResponseType> createObterPapeisPessoasResponse(ObterPapeisPessoasResponseType value) {
+        return new JAXBElement<ObterPapeisPessoasResponseType>(_ObterPapeisPessoasResponse_QNAME, ObterPapeisPessoasResponseType.class, null, value);
     }
 
     /**
@@ -1321,21 +1256,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterListaContratosType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasResponseType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterListaContratos")
-    public JAXBElement<ObterListaContratosType> createObterListaContratos(ObterListaContratosType value) {
-        return new JAXBElement<ObterListaContratosType>(_ObterListaContratos_QNAME, ObterListaContratosType.class, null, value);
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasResponse")
+    public JAXBElement<ObterPessoasResponseType> createObterPessoasResponse(ObterPessoasResponseType value) {
+        return new JAXBElement<ObterPessoasResponseType>(_ObterPessoasResponse_QNAME, ObterPessoasResponseType.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterCorretorType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasCompletoType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterCorretor")
-    public JAXBElement<ObterCorretorType> createObterCorretor(ObterCorretorType value) {
-        return new JAXBElement<ObterCorretorType>(_ObterCorretor_QNAME, ObterCorretorType.class, null, value);
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasCompleto")
+    public JAXBElement<ObterPessoasCompletoType> createObterPessoasCompleto(ObterPessoasCompletoType value) {
+        return new JAXBElement<ObterPessoasCompletoType>(_ObterPessoasCompleto_QNAME, ObterPessoasCompletoType.class, null, value);
     }
 
     /**
@@ -1348,6 +1283,87 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosCnaeType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosCnae")
+    public JAXBElement<ObterDadosCnaeType> createObterDadosCnae(ObterDadosCnaeType value) {
+        return new JAXBElement<ObterDadosCnaeType>(_ObterDadosCnae_QNAME, ObterDadosCnaeType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosCnaeResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosCnaeResponse")
+    public JAXBElement<ObterDadosCnaeResponseType> createObterDadosCnaeResponse(ObterDadosCnaeResponseType value) {
+        return new JAXBElement<ObterDadosCnaeResponseType>(_ObterDadosCnaeResponse_QNAME, ObterDadosCnaeResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterCorretorType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterCorretor")
+    public JAXBElement<ObterCorretorType> createObterCorretor(ObterCorretorType value) {
+        return new JAXBElement<ObterCorretorType>(_ObterCorretor_QNAME, ObterCorretorType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterCorretorResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterCorretorResponse")
+    public JAXBElement<ObterCorretorResponseType> createObterCorretorResponse(ObterCorretorResponseType value) {
+        return new JAXBElement<ObterCorretorResponseType>(_ObterCorretorResponse_QNAME, ObterCorretorResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterFuncionarioPrestadorType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterFuncionarioPrestador")
+    public JAXBElement<ObterFuncionarioPrestadorType> createObterFuncionarioPrestador(ObterFuncionarioPrestadorType value) {
+        return new JAXBElement<ObterFuncionarioPrestadorType>(_ObterFuncionarioPrestador_QNAME, ObterFuncionarioPrestadorType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterFuncionarioPrestadorResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterFuncionarioPrestadorResponse")
+    public JAXBElement<ObterFuncionarioPrestadorResponseType> createObterFuncionarioPrestadorResponse(ObterFuncionarioPrestadorResponseType value) {
+        return new JAXBElement<ObterFuncionarioPrestadorResponseType>(_ObterFuncionarioPrestadorResponse_QNAME, ObterFuncionarioPrestadorResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterListaContratosType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterListaContratos")
+    public JAXBElement<ObterListaContratosType> createObterListaContratos(ObterListaContratosType value) {
+        return new JAXBElement<ObterListaContratosType>(_ObterListaContratos_QNAME, ObterListaContratosType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterListaContratosResponseType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterListaContratosResponse")
+    public JAXBElement<ObterListaContratosResponseType> createObterListaContratosResponse(ObterListaContratosResponseType value) {
+        return new JAXBElement<ObterListaContratosResponseType>(_ObterListaContratosResponse_QNAME, ObterListaContratosResponseType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosVeiculoType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterDadosVeiculo")
+    public JAXBElement<ObterDadosVeiculoType> createObterDadosVeiculo(ObterDadosVeiculoType value) {
+        return new JAXBElement<ObterDadosVeiculoType>(_ObterDadosVeiculo_QNAME, ObterDadosVeiculoType.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ObterDadosVeiculoResponseType }{@code >}}
      * 
      */
@@ -1357,21 +1373,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasContratosCompletoResponseType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PortoSeguroFaultInfoType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasContratosCompletoResponse")
-    public JAXBElement<ObterPessoasContratosCompletoResponseType> createObterPessoasContratosCompletoResponse(ObterPessoasContratosCompletoResponseType value) {
-        return new JAXBElement<ObterPessoasContratosCompletoResponseType>(_ObterPessoasContratosCompletoResponse_QNAME, ObterPessoasContratosCompletoResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObterPessoasCompletoType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/bi/integrations/ConsultaDadosBCPEBS/V2_0/", name = "obterPessoasCompleto")
-    public JAXBElement<ObterPessoasCompletoType> createObterPessoasCompleto(ObterPessoasCompletoType value) {
-        return new JAXBElement<ObterPessoasCompletoType>(_ObterPessoasCompleto_QNAME, ObterPessoasCompletoType.class, null, value);
+    @XmlElementDecl(namespace = "http://www.portoseguro.com.br/foundation/PortoSeguroMessage", name = "portoSeguroFaultInfo")
+    public JAXBElement<PortoSeguroFaultInfoType> createPortoSeguroFaultInfo(PortoSeguroFaultInfoType value) {
+        return new JAXBElement<PortoSeguroFaultInfoType>(_PortoSeguroFaultInfo_QNAME, PortoSeguroFaultInfoType.class, null, value);
     }
 
 }

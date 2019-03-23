@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2019.03.23 às 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -12,23 +19,23 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * Elemento usado para casos elegiveis para extens�o de uma mensagem ou tipo.
+ * Elemento usado para casos elegiveis para extensão de uma mensagem ou tipo.
  * 
  * 
  * <p>Classe Java de ExtensionType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ExtensionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ExtensionType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;any processContents='lax' namespace='##other' maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

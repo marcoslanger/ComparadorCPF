@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2019.03.23 às 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -9,18 +16,18 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java de ObterCorretorType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterCorretorType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ObterCorretorType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -34,7 +41,7 @@ public class ObterCorretorType {
     protected long numeroPessoa;
 
     /**
-     * Obt�m o valor da propriedade numeroPessoa.
+     * Obtém o valor da propriedade numeroPessoa.
      * 
      */
     public long getNumeroPessoa() {

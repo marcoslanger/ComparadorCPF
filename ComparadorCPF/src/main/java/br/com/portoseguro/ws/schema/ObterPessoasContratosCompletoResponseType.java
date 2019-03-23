@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa√ß√£o de Refer√™ncia (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modifica√ß√µes neste arquivo ser√£o perdidas ap√≥s a recompila√ß√£o do esquema de origem. 
+// Gerado em: 2019.03.23 √†s 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -14,635 +21,635 @@ import javax.xml.datatype.XMLGregorianCalendar;
 /**
  * <p>Classe Java de ObterPessoasContratosCompletoResponseType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterPessoasContratosCompletoResponseType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="pessoa" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="acessosRestritos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="codigoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="descricaoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="contratos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="itens" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="localRisco" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                                 &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                                 &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                                 &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="objeto" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                                 &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                                       &lt;element name="veiculo" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                                 &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                                 &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                                 &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                                 &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                                 &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                       &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                       &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                   &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="enderecos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="enderecosEletronicos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="fisica" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                                       &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                       &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                                       &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                       &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                                       &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="flagCadastroPortalCliente" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="juridica" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="nomeTratamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                   &lt;element name="papeisPessoa" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="primeiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="segundoCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="telefones" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="terceiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="vinculos" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                             &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                   &lt;element name="midiasSociais" maxOccurs="unbounded" minOccurs="0">
- *                     &lt;complexType>
- *                       &lt;complexContent>
- *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                           &lt;sequence>
- *                             &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                             &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                             &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                             &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                           &lt;/sequence>
- *                         &lt;/restriction>
- *                       &lt;/complexContent>
- *                     &lt;/complexType>
- *                   &lt;/element>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ObterPessoasContratosCompletoResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="pessoa" maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="acessosRestritos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="descricaoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="contratos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="itens" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="localRisco" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="objeto" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                                       &lt;element name="veiculo" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                                         &lt;complexType&gt;
+ *                                           &lt;complexContent&gt;
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                               &lt;sequence&gt;
+ *                                                 &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                                 &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                                 &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                                 &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                               &lt;/sequence&gt;
+ *                                             &lt;/restriction&gt;
+ *                                           &lt;/complexContent&gt;
+ *                                         &lt;/complexType&gt;
+ *                                       &lt;/element&gt;
+ *                                       &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                   &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="enderecos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="enderecosEletronicos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="fisica" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                             &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                               &lt;complexType&gt;
+ *                                 &lt;complexContent&gt;
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                                     &lt;sequence&gt;
+ *                                       &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                                       &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                                       &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                                     &lt;/sequence&gt;
+ *                                   &lt;/restriction&gt;
+ *                                 &lt;/complexContent&gt;
+ *                               &lt;/complexType&gt;
+ *                             &lt;/element&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="flagCadastroPortalCliente" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="juridica" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="nomeTratamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                   &lt;element name="papeisPessoa" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="primeiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="segundoCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="telefones" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="terceiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="vinculos" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                             &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="midiasSociais" maxOccurs="unbounded" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                             &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                             &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                             &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -688,625 +695,625 @@ public class ObterPessoasContratosCompletoResponseType {
     /**
      * <p>Classe Java de anonymous complex type.
      * 
-     * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+     * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="acessosRestritos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="codigoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="descricaoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="contratos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="itens" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="localRisco" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                                       &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                                       &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                                       &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="objeto" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                                       &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                             &lt;element name="veiculo" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                                       &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                                       &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                                       &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                                       &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                             &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *         &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="enderecos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-     *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="enderecosEletronicos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="fisica" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                             &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                             &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                             &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                             &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                             &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="flagCadastroPortalCliente" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="juridica" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="nomeTratamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *         &lt;element name="papeisPessoa" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="primeiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="segundoCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="telefones" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="terceiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="vinculos" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *                   &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="midiasSociais" maxOccurs="unbounded" minOccurs="0">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence>
-     *                   &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                   &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *                   &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *                   &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="acessosRestritos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="codigoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="descricaoTipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="contratos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="itens" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="localRisco" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="objeto" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                             &lt;element name="veiculo" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                               &lt;complexType&gt;
+     *                                 &lt;complexContent&gt;
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                                     &lt;sequence&gt;
+     *                                       &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                                       &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                                       &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                       &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                                     &lt;/sequence&gt;
+     *                                   &lt;/restriction&gt;
+     *                                 &lt;/complexContent&gt;
+     *                               &lt;/complexType&gt;
+     *                             &lt;/element&gt;
+     *                             &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *         &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="enderecos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+     *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="enderecosEletronicos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="fisica" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                   &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0"&gt;
+     *                     &lt;complexType&gt;
+     *                       &lt;complexContent&gt;
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                           &lt;sequence&gt;
+     *                             &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                             &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                             &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                             &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                           &lt;/sequence&gt;
+     *                         &lt;/restriction&gt;
+     *                       &lt;/complexContent&gt;
+     *                     &lt;/complexType&gt;
+     *                   &lt;/element&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="flagCadastroPortalCliente" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="juridica" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="nomeTratamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *         &lt;element name="papeisPessoa" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="primeiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="segundoCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="telefones" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="terceiroCodigoFonetico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="vinculos" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *                   &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="midiasSociais" maxOccurs="unbounded" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                   &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *                   &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *                   &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -1397,7 +1404,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoOrigemMovimento.
+         * Obt√©m o valor da propriedade codigoOrigemMovimento.
          * 
          * @return
          *     possible object is
@@ -1421,7 +1428,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoTipoPessoa.
+         * Obt√©m o valor da propriedade codigoTipoPessoa.
          * 
          * @return
          *     possible object is
@@ -1445,7 +1452,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade descricaoTipoPessoa.
+         * Obt√©m o valor da propriedade descricaoTipoPessoa.
          * 
          * @return
          *     possible object is
@@ -1498,7 +1505,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+         * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
          * 
          * @return
          *     possible object is
@@ -1522,7 +1529,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade dataInclusaoRegistro.
+         * Obt√©m o valor da propriedade dataInclusaoRegistro.
          * 
          * @return
          *     possible object is
@@ -1633,7 +1640,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade fisica.
+         * Obt√©m o valor da propriedade fisica.
          * 
          * @return
          *     possible object is
@@ -1657,7 +1664,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade flagCadastroPortalCliente.
+         * Obt√©m o valor da propriedade flagCadastroPortalCliente.
          * 
          * @return
          *     possible object is
@@ -1681,7 +1688,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade juridica.
+         * Obt√©m o valor da propriedade juridica.
          * 
          * @return
          *     possible object is
@@ -1705,7 +1712,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomeOrigemMovimento.
+         * Obt√©m o valor da propriedade nomeOrigemMovimento.
          * 
          * @return
          *     possible object is
@@ -1729,7 +1736,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomePessoa.
+         * Obt√©m o valor da propriedade nomePessoa.
          * 
          * @return
          *     possible object is
@@ -1753,7 +1760,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomeTratamento.
+         * Obt√©m o valor da propriedade nomeTratamento.
          * 
          * @return
          *     possible object is
@@ -1777,7 +1784,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade numeroPessoa.
+         * Obt√©m o valor da propriedade numeroPessoa.
          * 
          * @return
          *     possible object is
@@ -1830,7 +1837,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade primeiroCodigoFonetico.
+         * Obt√©m o valor da propriedade primeiroCodigoFonetico.
          * 
          * @return
          *     possible object is
@@ -1854,7 +1861,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade segundoCodigoFonetico.
+         * Obt√©m o valor da propriedade segundoCodigoFonetico.
          * 
          * @return
          *     possible object is
@@ -1907,7 +1914,7 @@ public class ObterPessoasContratosCompletoResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade terceiroCodigoFonetico.
+         * Obt√©m o valor da propriedade terceiroCodigoFonetico.
          * 
          * @return
          *     possible object is
@@ -1992,22 +1999,22 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoRestricaoAcessoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="dataExclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -2031,7 +2038,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Short numeroSequencia;
 
             /**
-             * ObtÈm o valor da propriedade codigoRestricaoAcessoPessoa.
+             * Obt√©m o valor da propriedade codigoRestricaoAcessoPessoa.
              * 
              * @return
              *     possible object is
@@ -2055,7 +2062,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataExclusaoRegistro.
+             * Obt√©m o valor da propriedade dataExclusaoRegistro.
              * 
              * @return
              *     possible object is
@@ -2079,7 +2086,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInclusaoRegistro.
+             * Obt√©m o valor da propriedade dataInclusaoRegistro.
              * 
              * @return
              *     possible object is
@@ -2103,7 +2110,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -2127,7 +2134,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is
@@ -2156,328 +2163,328 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="itens" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="localRisco" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="objeto" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                             &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *                   &lt;element name="veiculo" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                             &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                             &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                             &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoSusep" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="codigoCanalVenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoProdutoOrigem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoSegmento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="nomeSegmento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="enderecosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="enderecosEletronicosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="codigoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="nomeSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataAtualizacaoSituacaoContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="itens" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="localRisco" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="objeto" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *                   &lt;element name="veiculo" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="nomeCanalVenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeEmpresaQuemEmitiu" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroClienteSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="telefonesContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="vinculosContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                             &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+         *                     &lt;complexType&gt;
+         *                       &lt;complexContent&gt;
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                           &lt;sequence&gt;
+         *                             &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                             &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                             &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                             &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                           &lt;/sequence&gt;
+         *                         &lt;/restriction&gt;
+         *                       &lt;/complexContent&gt;
+         *                     &lt;/complexType&gt;
+         *                   &lt;/element&gt;
+         *                   &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -2553,7 +2560,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected List<ObterPessoasContratosCompletoResponseType.Pessoa.Contratos.VinculosContrato> vinculosContrato;
 
             /**
-             * ObtÈm o valor da propriedade codigoSusep.
+             * Obt√©m o valor da propriedade codigoSusep.
              * 
              * @return
              *     possible object is
@@ -2606,7 +2613,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoCanalVenda.
+             * Obt√©m o valor da propriedade codigoCanalVenda.
              * 
              * @return
              *     possible object is
@@ -2630,7 +2637,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoEmpresaQuemEmitiu.
+             * Obt√©m o valor da propriedade codigoEmpresaQuemEmitiu.
              * 
              * @return
              *     possible object is
@@ -2654,7 +2661,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoOrigemProposta.
+             * Obt√©m o valor da propriedade codigoOrigemProposta.
              * 
              * @return
              *     possible object is
@@ -2678,7 +2685,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoProdutoOrigem.
+             * Obt√©m o valor da propriedade codigoProdutoOrigem.
              * 
              * @return
              *     possible object is
@@ -2702,7 +2709,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoProdutoBcp.
+             * Obt√©m o valor da propriedade codigoProdutoBcp.
              * 
              * @return
              *     possible object is
@@ -2726,7 +2733,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoSegmento.
+             * Obt√©m o valor da propriedade codigoSegmento.
              * 
              * @return
              *     possible object is
@@ -2750,7 +2757,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeSegmento.
+             * Obt√©m o valor da propriedade nomeSegmento.
              * 
              * @return
              *     possible object is
@@ -2774,7 +2781,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataEmissao.
+             * Obt√©m o valor da propriedade dataEmissao.
              * 
              * @return
              *     possible object is
@@ -2798,7 +2805,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataFinalVigencia.
+             * Obt√©m o valor da propriedade dataFinalVigencia.
              * 
              * @return
              *     possible object is
@@ -2822,7 +2829,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInicioVigencia.
+             * Obt√©m o valor da propriedade dataInicioVigencia.
              * 
              * @return
              *     possible object is
@@ -2904,7 +2911,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoSituacaoContrato.
+             * Obt√©m o valor da propriedade codigoSituacaoContrato.
              * 
              * @return
              *     possible object is
@@ -2928,7 +2935,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeSituacaoContrato.
+             * Obt√©m o valor da propriedade nomeSituacaoContrato.
              * 
              * @return
              *     possible object is
@@ -2952,7 +2959,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAtualizacaoSituacaoContrato.
+             * Obt√©m o valor da propriedade dataAtualizacaoSituacaoContrato.
              * 
              * @return
              *     possible object is
@@ -3005,7 +3012,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeCanalVenda.
+             * Obt√©m o valor da propriedade nomeCanalVenda.
              * 
              * @return
              *     possible object is
@@ -3029,7 +3036,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeEmpresaQuemEmitiu.
+             * Obt√©m o valor da propriedade nomeEmpresaQuemEmitiu.
              * 
              * @return
              *     possible object is
@@ -3053,7 +3060,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeProdutoBcp.
+             * Obt√©m o valor da propriedade nomeProdutoBcp.
              * 
              * @return
              *     possible object is
@@ -3077,7 +3084,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroClienteSistemaOrigem.
+             * Obt√©m o valor da propriedade numeroClienteSistemaOrigem.
              * 
              * @return
              *     possible object is
@@ -3101,7 +3108,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroContrato.
+             * Obt√©m o valor da propriedade numeroContrato.
              * 
              * @return
              *     possible object is
@@ -3125,7 +3132,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroContratoSistemaOrigem.
+             * Obt√©m o valor da propriedade numeroContratoSistemaOrigem.
              * 
              * @return
              *     possible object is
@@ -3149,7 +3156,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroContratoVinculado.
+             * Obt√©m o valor da propriedade numeroContratoVinculado.
              * 
              * @return
              *     possible object is
@@ -3173,7 +3180,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroDigitoProposta.
+             * Obt√©m o valor da propriedade numeroDigitoProposta.
              * 
              * @return
              *     possible object is
@@ -3197,7 +3204,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -3311,19 +3318,19 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -3339,7 +3346,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected String valor;
 
                 /**
-                 * ObtÈm o valor da propriedade chave.
+                 * Obt√©m o valor da propriedade chave.
                  * 
                  * @return
                  *     possible object is
@@ -3363,7 +3370,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade valor.
+                 * Obt√©m o valor da propriedade valor.
                  * 
                  * @return
                  *     possible object is
@@ -3392,42 +3399,42 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -3491,7 +3498,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected String siglaPais;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoFinalidadeEndereco.
+                 * Obt√©m o valor da propriedade codigoFinalidadeEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -3515,7 +3522,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoFinalidadeEndereco.
+                 * Obt√©m o valor da propriedade descricaoFinalidadeEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -3539,7 +3546,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoOrigemMovimento.
+                 * Obt√©m o valor da propriedade codigoOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -3563,7 +3570,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoUnidadeFederacao.
+                 * Obt√©m o valor da propriedade codigoUnidadeFederacao.
                  * 
                  * @return
                  *     possible object is
@@ -3587,7 +3594,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade complementoEndereco.
+                 * Obt√©m o valor da propriedade complementoEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -3611,7 +3618,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+                 * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
                  * 
                  * @return
                  *     possible object is
@@ -3635,7 +3642,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -3659,7 +3666,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -3683,7 +3690,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade flagNivelConfiancaEnderecoAtingido.
+                 * Obt√©m o valor da propriedade flagNivelConfiancaEnderecoAtingido.
                  * 
                  * @return
                  *     possible object is
@@ -3707,7 +3714,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade flagNivelConfiancaLocalizacaoAtingido.
+                 * Obt√©m o valor da propriedade flagNivelConfiancaLocalizacaoAtingido.
                  * 
                  * @return
                  *     possible object is
@@ -3731,7 +3738,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade indiceSucessoEntregaCorrespondencia.
+                 * Obt√©m o valor da propriedade indiceSucessoEntregaCorrespondencia.
                  * 
                  * @return
                  *     possible object is
@@ -3755,7 +3762,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeBairro.
+                 * Obt√©m o valor da propriedade nomeBairro.
                  * 
                  * @return
                  *     possible object is
@@ -3779,7 +3786,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeCidade.
+                 * Obt√©m o valor da propriedade nomeCidade.
                  * 
                  * @return
                  *     possible object is
@@ -3803,7 +3810,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeLogradouro.
+                 * Obt√©m o valor da propriedade nomeLogradouro.
                  * 
                  * @return
                  *     possible object is
@@ -3827,7 +3834,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeOrigemMovimento.
+                 * Obt√©m o valor da propriedade nomeOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -3851,7 +3858,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeTipoLogradouro.
+                 * Obt√©m o valor da propriedade nomeTipoLogradouro.
                  * 
                  * @return
                  *     possible object is
@@ -3875,7 +3882,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroComplementoCep.
+                 * Obt√©m o valor da propriedade numeroComplementoCep.
                  * 
                  * @return
                  *     possible object is
@@ -3899,7 +3906,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -3923,7 +3930,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroInicioCep.
+                 * Obt√©m o valor da propriedade numeroInicioCep.
                  * 
                  * @return
                  *     possible object is
@@ -3947,7 +3954,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroLatitudeDecimal.
+                 * Obt√©m o valor da propriedade numeroLatitudeDecimal.
                  * 
                  * @return
                  *     possible object is
@@ -3971,7 +3978,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroLogradouro.
+                 * Obt√©m o valor da propriedade numeroLogradouro.
                  * 
                  * @return
                  *     possible object is
@@ -3995,7 +4002,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroLongitudeDecimal.
+                 * Obt√©m o valor da propriedade numeroLongitudeDecimal.
                  * 
                  * @return
                  *     possible object is
@@ -4019,7 +4026,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroSequencia.
+                 * Obt√©m o valor da propriedade numeroSequencia.
                  * 
                  * @return
                  *     possible object is
@@ -4043,7 +4050,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade percentualConfiancaEndereco.
+                 * Obt√©m o valor da propriedade percentualConfiancaEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -4067,7 +4074,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade siglaPais.
+                 * Obt√©m o valor da propriedade siglaPais.
                  * 
                  * @return
                  *     possible object is
@@ -4096,27 +4103,27 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -4150,7 +4157,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected Short numeroSequencia;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoFinalidadeEndereco.
+                 * Obt√©m o valor da propriedade codigoFinalidadeEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -4174,7 +4181,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoFinalidadeEndereco.
+                 * Obt√©m o valor da propriedade descricaoFinalidadeEndereco.
                  * 
                  * @return
                  *     possible object is
@@ -4198,7 +4205,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoOrigemMovimento.
+                 * Obt√©m o valor da propriedade codigoOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -4222,7 +4229,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+                 * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
                  * 
                  * @return
                  *     possible object is
@@ -4246,7 +4253,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -4270,7 +4277,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade enderecoEletronico.
+                 * Obt√©m o valor da propriedade enderecoEletronico.
                  * 
                  * @return
                  *     possible object is
@@ -4294,7 +4301,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -4318,7 +4325,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeOrigemMovimento.
+                 * Obt√©m o valor da propriedade nomeOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -4342,7 +4349,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -4366,7 +4373,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroSequencia.
+                 * Obt√©m o valor da propriedade numeroSequencia.
                  * 
                  * @return
                  *     possible object is
@@ -4395,125 +4402,125 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="localRisco" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="objeto" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *                   &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-             *         &lt;element name="veiculo" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *                   &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoEndosso" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoValorRecebido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="codigoSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="nomeSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataInclusaoRegistroSituacaoItem" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="localRisco" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="nomeFormaPagamento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeTipoAlteracaoItem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroDigitoEndosso" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="numeroItemSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="numeroRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="objeto" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="ordemRenovacaoSimplificada" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="sinistros" maxOccurs="unbounded" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="valorContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="valorRecebimento" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="valorTotalContrato" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+             *         &lt;element name="veiculo" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -4587,7 +4594,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected ObterPessoasContratosCompletoResponseType.Pessoa.Contratos.Itens.Veiculo veiculo;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoEndosso.
+                 * Obt√©m o valor da propriedade codigoEndosso.
                  * 
                  * @return
                  *     possible object is
@@ -4611,7 +4618,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoFormaPagamento.
+                 * Obt√©m o valor da propriedade codigoFormaPagamento.
                  * 
                  * @return
                  *     possible object is
@@ -4635,7 +4642,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoOrigemProposta.
+                 * Obt√©m o valor da propriedade codigoOrigemProposta.
                  * 
                  * @return
                  *     possible object is
@@ -4659,7 +4666,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoTipoAlteracaoItem.
+                 * Obt√©m o valor da propriedade codigoTipoAlteracaoItem.
                  * 
                  * @return
                  *     possible object is
@@ -4683,7 +4690,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoValorRecebido.
+                 * Obt√©m o valor da propriedade codigoValorRecebido.
                  * 
                  * @return
                  *     possible object is
@@ -4707,7 +4714,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoValorRecebido.
+                 * Obt√©m o valor da propriedade descricaoValorRecebido.
                  * 
                  * @return
                  *     possible object is
@@ -4731,7 +4738,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataEmissao.
+                 * Obt√©m o valor da propriedade dataEmissao.
                  * 
                  * @return
                  *     possible object is
@@ -4755,7 +4762,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataFinalVigencia.
+                 * Obt√©m o valor da propriedade dataFinalVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -4779,7 +4786,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInicioVigencia.
+                 * Obt√©m o valor da propriedade dataInicioVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -4803,7 +4810,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoSituacaoItem.
+                 * Obt√©m o valor da propriedade codigoSituacaoItem.
                  * 
                  * @return
                  *     possible object is
@@ -4827,7 +4834,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeSituacaoItem.
+                 * Obt√©m o valor da propriedade nomeSituacaoItem.
                  * 
                  * @return
                  *     possible object is
@@ -4851,7 +4858,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInclusaoRegistroSituacaoItem.
+                 * Obt√©m o valor da propriedade dataInclusaoRegistroSituacaoItem.
                  * 
                  * @return
                  *     possible object is
@@ -4875,7 +4882,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade localRisco.
+                 * Obt√©m o valor da propriedade localRisco.
                  * 
                  * @return
                  *     possible object is
@@ -4899,7 +4906,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeFormaPagamento.
+                 * Obt√©m o valor da propriedade nomeFormaPagamento.
                  * 
                  * @return
                  *     possible object is
@@ -4923,7 +4930,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeTipoAlteracaoItem.
+                 * Obt√©m o valor da propriedade nomeTipoAlteracaoItem.
                  * 
                  * @return
                  *     possible object is
@@ -4947,7 +4954,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -4971,7 +4978,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroDigitoEndosso.
+                 * Obt√©m o valor da propriedade numeroDigitoEndosso.
                  * 
                  * @return
                  *     possible object is
@@ -4995,7 +5002,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroDigitoProposta.
+                 * Obt√©m o valor da propriedade numeroDigitoProposta.
                  * 
                  * @return
                  *     possible object is
@@ -5019,7 +5026,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroItem.
+                 * Obt√©m o valor da propriedade numeroItem.
                  * 
                  * @return
                  *     possible object is
@@ -5043,7 +5050,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroItemSistemaOrigem.
+                 * Obt√©m o valor da propriedade numeroItemSistemaOrigem.
                  * 
                  * @return
                  *     possible object is
@@ -5067,7 +5074,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroRenovacaoSimplificada.
+                 * Obt√©m o valor da propriedade numeroRenovacaoSimplificada.
                  * 
                  * @return
                  *     possible object is
@@ -5091,7 +5098,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroSequenciaDocumento.
+                 * Obt√©m o valor da propriedade numeroSequenciaDocumento.
                  * 
                  * @return
                  *     possible object is
@@ -5115,7 +5122,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade objeto.
+                 * Obt√©m o valor da propriedade objeto.
                  * 
                  * @return
                  *     possible object is
@@ -5139,7 +5146,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade ordemRenovacaoSimplificada.
+                 * Obt√©m o valor da propriedade ordemRenovacaoSimplificada.
                  * 
                  * @return
                  *     possible object is
@@ -5192,7 +5199,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade valorContrato.
+                 * Obt√©m o valor da propriedade valorContrato.
                  * 
                  * @return
                  *     possible object is
@@ -5216,7 +5223,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade valorRecebimento.
+                 * Obt√©m o valor da propriedade valorRecebimento.
                  * 
                  * @return
                  *     possible object is
@@ -5240,7 +5247,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade valorTotalContrato.
+                 * Obt√©m o valor da propriedade valorTotalContrato.
                  * 
                  * @return
                  *     possible object is
@@ -5264,7 +5271,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade veiculo.
+                 * Obt√©m o valor da propriedade veiculo.
                  * 
                  * @return
                  *     possible object is
@@ -5291,36 +5298,36 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-                 *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-                 *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-                 *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -5371,7 +5378,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected String siglaPais;
 
                     /**
-                     * ObtÈm o valor da propriedade codigoFinalidadeEndereco.
+                     * Obt√©m o valor da propriedade codigoFinalidadeEndereco.
                      * 
                      * @return
                      *     possible object is
@@ -5395,7 +5402,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade descricaoFinalidadeEndereco.
+                     * Obt√©m o valor da propriedade descricaoFinalidadeEndereco.
                      * 
                      * @return
                      *     possible object is
@@ -5419,7 +5426,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade codigoOrigemMovimento.
+                     * Obt√©m o valor da propriedade codigoOrigemMovimento.
                      * 
                      * @return
                      *     possible object is
@@ -5443,7 +5450,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade codigoUnidadeFederacao.
+                     * Obt√©m o valor da propriedade codigoUnidadeFederacao.
                      * 
                      * @return
                      *     possible object is
@@ -5467,7 +5474,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade complementoEndereco.
+                     * Obt√©m o valor da propriedade complementoEndereco.
                      * 
                      * @return
                      *     possible object is
@@ -5491,7 +5498,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+                     * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
                      * 
                      * @return
                      *     possible object is
@@ -5515,7 +5522,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeBairro.
+                     * Obt√©m o valor da propriedade nomeBairro.
                      * 
                      * @return
                      *     possible object is
@@ -5539,7 +5546,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeCidade.
+                     * Obt√©m o valor da propriedade nomeCidade.
                      * 
                      * @return
                      *     possible object is
@@ -5563,7 +5570,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeLogradouro.
+                     * Obt√©m o valor da propriedade nomeLogradouro.
                      * 
                      * @return
                      *     possible object is
@@ -5587,7 +5594,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeTipoLogradouro.
+                     * Obt√©m o valor da propriedade nomeTipoLogradouro.
                      * 
                      * @return
                      *     possible object is
@@ -5611,7 +5618,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroComplementoCep.
+                     * Obt√©m o valor da propriedade numeroComplementoCep.
                      * 
                      * @return
                      *     possible object is
@@ -5635,7 +5642,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroContrato.
+                     * Obt√©m o valor da propriedade numeroContrato.
                      * 
                      * @return
                      *     possible object is
@@ -5659,7 +5666,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroInicioCep.
+                     * Obt√©m o valor da propriedade numeroInicioCep.
                      * 
                      * @return
                      *     possible object is
@@ -5683,7 +5690,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroItem.
+                     * Obt√©m o valor da propriedade numeroItem.
                      * 
                      * @return
                      *     possible object is
@@ -5707,7 +5714,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroLatitudeDecimal.
+                     * Obt√©m o valor da propriedade numeroLatitudeDecimal.
                      * 
                      * @return
                      *     possible object is
@@ -5731,7 +5738,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroLogradouro.
+                     * Obt√©m o valor da propriedade numeroLogradouro.
                      * 
                      * @return
                      *     possible object is
@@ -5755,7 +5762,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroLongitudeDecimal.
+                     * Obt√©m o valor da propriedade numeroLongitudeDecimal.
                      * 
                      * @return
                      *     possible object is
@@ -5779,7 +5786,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequenciaDocumento.
+                     * Obt√©m o valor da propriedade numeroSequenciaDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -5803,7 +5810,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade siglaPais.
+                     * Obt√©m o valor da propriedade siglaPais.
                      * 
                      * @return
                      *     possible object is
@@ -5832,23 +5839,23 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="codigoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="codigoTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeTipoObjeto" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -5872,7 +5879,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected Short numeroSequenciaDocumento;
 
                     /**
-                     * ObtÈm o valor da propriedade codigoObjeto.
+                     * Obt√©m o valor da propriedade codigoObjeto.
                      * 
                      * @return
                      *     possible object is
@@ -5896,7 +5903,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade codigoTipoObjeto.
+                     * Obt√©m o valor da propriedade codigoTipoObjeto.
                      * 
                      * @return
                      *     possible object is
@@ -5920,7 +5927,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeTipoObjeto.
+                     * Obt√©m o valor da propriedade nomeTipoObjeto.
                      * 
                      * @return
                      *     possible object is
@@ -5944,7 +5951,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroContrato.
+                     * Obt√©m o valor da propriedade numeroContrato.
                      * 
                      * @return
                      *     possible object is
@@ -5968,7 +5975,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroItem.
+                     * Obt√©m o valor da propriedade numeroItem.
                      * 
                      * @return
                      *     possible object is
@@ -5992,7 +5999,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequenciaDocumento.
+                     * Obt√©m o valor da propriedade numeroSequenciaDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -6021,25 +6028,25 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-                 *         &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-                 *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="codigoTipoPerda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="dataAvisoSinistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeTipoPerda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSinistroOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -6068,7 +6075,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected String numeroSinistroOrigem;
 
                     /**
-                     * ObtÈm o valor da propriedade codigoTipoPerda.
+                     * Obt√©m o valor da propriedade codigoTipoPerda.
                      * 
                      * @return
                      *     possible object is
@@ -6092,7 +6099,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade dataAvisoSinistro.
+                     * Obt√©m o valor da propriedade dataAvisoSinistro.
                      * 
                      * @return
                      *     possible object is
@@ -6116,7 +6123,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeTipoPerda.
+                     * Obt√©m o valor da propriedade nomeTipoPerda.
                      * 
                      * @return
                      *     possible object is
@@ -6140,7 +6147,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroContrato.
+                     * Obt√©m o valor da propriedade numeroContrato.
                      * 
                      * @return
                      *     possible object is
@@ -6164,7 +6171,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroItem.
+                     * Obt√©m o valor da propriedade numeroItem.
                      * 
                      * @return
                      *     possible object is
@@ -6188,7 +6195,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequencia.
+                     * Obt√©m o valor da propriedade numeroSequencia.
                      * 
                      * @return
                      *     possible object is
@@ -6212,7 +6219,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequenciaDocumento.
+                     * Obt√©m o valor da propriedade numeroSequenciaDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -6236,7 +6243,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSinistroOrigem.
+                     * Obt√©m o valor da propriedade numeroSinistroOrigem.
                      * 
                      * @return
                      *     possible object is
@@ -6265,27 +6272,27 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-                 *         &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="anoFabricacaoVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="anoModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeMarcaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeModeloVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="nomeTipoVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroChassiVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroItem" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroLicencaVeiculo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequenciaDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -6317,7 +6324,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected Short numeroSequenciaDocumento;
 
                     /**
-                     * ObtÈm o valor da propriedade anoFabricacaoVeiculo.
+                     * Obt√©m o valor da propriedade anoFabricacaoVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6341,7 +6348,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade anoModeloVeiculo.
+                     * Obt√©m o valor da propriedade anoModeloVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6365,7 +6372,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeMarcaVeiculo.
+                     * Obt√©m o valor da propriedade nomeMarcaVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6389,7 +6396,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeModeloVeiculo.
+                     * Obt√©m o valor da propriedade nomeModeloVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6413,7 +6420,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomeTipoVeiculo.
+                     * Obt√©m o valor da propriedade nomeTipoVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6437,7 +6444,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroChassiVeiculo.
+                     * Obt√©m o valor da propriedade numeroChassiVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6461,7 +6468,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroContrato.
+                     * Obt√©m o valor da propriedade numeroContrato.
                      * 
                      * @return
                      *     possible object is
@@ -6485,7 +6492,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroItem.
+                     * Obt√©m o valor da propriedade numeroItem.
                      * 
                      * @return
                      *     possible object is
@@ -6509,7 +6516,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroLicencaVeiculo.
+                     * Obt√©m o valor da propriedade numeroLicencaVeiculo.
                      * 
                      * @return
                      *     possible object is
@@ -6533,7 +6540,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequenciaDocumento.
+                     * Obt√©m o valor da propriedade numeroSequenciaDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -6564,21 +6571,21 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -6599,7 +6606,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected String numeroContrato;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoPapelPessoa.
+                 * Obt√©m o valor da propriedade codigoPapelPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -6623,7 +6630,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInicioVigencia.
+                 * Obt√©m o valor da propriedade dataInicioVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -6647,7 +6654,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomePapelPessoa.
+                 * Obt√©m o valor da propriedade nomePapelPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -6671,7 +6678,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -6700,29 +6707,29 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -6760,7 +6767,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected Long numeroTelefone;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoDdd.
+                 * Obt√©m o valor da propriedade codigoDdd.
                  * 
                  * @return
                  *     possible object is
@@ -6784,7 +6791,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoDdi.
+                 * Obt√©m o valor da propriedade codigoDdi.
                  * 
                  * @return
                  *     possible object is
@@ -6808,7 +6815,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoOrigemMovimento.
+                 * Obt√©m o valor da propriedade codigoOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -6832,7 +6839,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoTipoTelefone.
+                 * Obt√©m o valor da propriedade codigoTipoTelefone.
                  * 
                  * @return
                  *     possible object is
@@ -6856,7 +6863,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoTipoTelefone.
+                 * Obt√©m o valor da propriedade descricaoTipoTelefone.
                  * 
                  * @return
                  *     possible object is
@@ -6880,7 +6887,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+                 * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
                  * 
                  * @return
                  *     possible object is
@@ -6904,7 +6911,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -6928,7 +6935,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+                 * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
                  * 
                  * @return
                  *     possible object is
@@ -6952,7 +6959,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeOrigemMovimento.
+                 * Obt√©m o valor da propriedade nomeOrigemMovimento.
                  * 
                  * @return
                  *     possible object is
@@ -6976,7 +6983,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -7000,7 +7007,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroSequencia.
+                 * Obt√©m o valor da propriedade numeroSequencia.
                  * 
                  * @return
                  *     possible object is
@@ -7024,7 +7031,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroTelefone.
+                 * Obt√©m o valor da propriedade numeroTelefone.
                  * 
                  * @return
                  *     possible object is
@@ -7053,74 +7060,74 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *                   &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="chaveDocumento" maxOccurs="unbounded" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="documentos" maxOccurs="unbounded" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="papelPessoaContrato" maxOccurs="unbounded" minOccurs="0"&gt;
+             *           &lt;complexType&gt;
+             *             &lt;complexContent&gt;
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *                 &lt;sequence&gt;
+             *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                   &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *                 &lt;/sequence&gt;
+             *               &lt;/restriction&gt;
+             *             &lt;/complexContent&gt;
+             *           &lt;/complexType&gt;
+             *         &lt;/element&gt;
+             *         &lt;element name="tipoVinculoContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="nomeProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataEmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="codigoOrigemProposta" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="numeroDigitoProposta" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -7246,7 +7253,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade tipoVinculoContrato.
+                 * Obt√©m o valor da propriedade tipoVinculoContrato.
                  * 
                  * @return
                  *     possible object is
@@ -7270,7 +7277,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroContrato.
+                 * Obt√©m o valor da propriedade numeroContrato.
                  * 
                  * @return
                  *     possible object is
@@ -7294,7 +7301,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoProdutoBcp.
+                 * Obt√©m o valor da propriedade codigoProdutoBcp.
                  * 
                  * @return
                  *     possible object is
@@ -7318,7 +7325,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeProdutoBcp.
+                 * Obt√©m o valor da propriedade nomeProdutoBcp.
                  * 
                  * @return
                  *     possible object is
@@ -7342,7 +7349,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInicioVigencia.
+                 * Obt√©m o valor da propriedade dataInicioVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -7366,7 +7373,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataFinalVigencia.
+                 * Obt√©m o valor da propriedade dataFinalVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -7390,7 +7397,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataEmissao.
+                 * Obt√©m o valor da propriedade dataEmissao.
                  * 
                  * @return
                  *     possible object is
@@ -7414,7 +7421,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoOrigemProposta.
+                 * Obt√©m o valor da propriedade codigoOrigemProposta.
                  * 
                  * @return
                  *     possible object is
@@ -7438,7 +7445,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroDigitoProposta.
+                 * Obt√©m o valor da propriedade numeroDigitoProposta.
                  * 
                  * @return
                  *     possible object is
@@ -7465,19 +7472,19 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="chave" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="valor" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -7493,7 +7500,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected String valor;
 
                     /**
-                     * ObtÈm o valor da propriedade chave.
+                     * Obt√©m o valor da propriedade chave.
                      * 
                      * @return
                      *     possible object is
@@ -7517,7 +7524,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade valor.
+                     * Obt√©m o valor da propriedade valor.
                      * 
                      * @return
                      *     possible object is
@@ -7546,29 +7553,29 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-                 *         &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-                 *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+                 *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -7604,7 +7611,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected String siglaTipoDocumento;
 
                     /**
-                     * ObtÈm o valor da propriedade codigoTipoDocumento.
+                     * Obt√©m o valor da propriedade codigoTipoDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7628,7 +7635,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade descricaoTipoDocumento.
+                     * Obt√©m o valor da propriedade descricaoTipoDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7652,7 +7659,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade digitoCpfouCnpj.
+                     * Obt√©m o valor da propriedade digitoCpfouCnpj.
                      * 
                      * @return
                      *     possible object is
@@ -7676,7 +7683,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade flagPessoaTitularDocumento.
+                     * Obt√©m o valor da propriedade flagPessoaTitularDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7700,7 +7707,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade descricaoPessoaTitularDocumento.
+                     * Obt√©m o valor da propriedade descricaoPessoaTitularDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7724,7 +7731,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroCpfouCnpj.
+                     * Obt√©m o valor da propriedade numeroCpfouCnpj.
                      * 
                      * @return
                      *     possible object is
@@ -7748,7 +7755,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroDocumento.
+                     * Obt√©m o valor da propriedade numeroDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7772,7 +7779,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroOrdemCnpj.
+                     * Obt√©m o valor da propriedade numeroOrdemCnpj.
                      * 
                      * @return
                      *     possible object is
@@ -7796,7 +7803,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroPessoa.
+                     * Obt√©m o valor da propriedade numeroPessoa.
                      * 
                      * @return
                      *     possible object is
@@ -7820,7 +7827,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomePessoa.
+                     * Obt√©m o valor da propriedade nomePessoa.
                      * 
                      * @return
                      *     possible object is
@@ -7844,7 +7851,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroSequencia.
+                     * Obt√©m o valor da propriedade numeroSequencia.
                      * 
                      * @return
                      *     possible object is
@@ -7868,7 +7875,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade siglaTipoDocumento.
+                     * Obt√©m o valor da propriedade siglaTipoDocumento.
                      * 
                      * @return
                      *     possible object is
@@ -7897,21 +7904,21 @@ public class ObterPessoasContratosCompletoResponseType {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
                  * 
                  * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-                 *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-                 *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
+                 * &lt;complexType&gt;
+                 *   &lt;complexContent&gt;
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+                 *       &lt;sequence&gt;
+                 *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+                 *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+                 *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *         &lt;element name="numeroContrato" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+                 *       &lt;/sequence&gt;
+                 *     &lt;/restriction&gt;
+                 *   &lt;/complexContent&gt;
+                 * &lt;/complexType&gt;
                  * </pre>
                  * 
                  * 
@@ -7932,7 +7939,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     protected String numeroContrato;
 
                     /**
-                     * ObtÈm o valor da propriedade codigoPapelPessoa.
+                     * Obt√©m o valor da propriedade codigoPapelPessoa.
                      * 
                      * @return
                      *     possible object is
@@ -7956,7 +7963,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade dataInicioVigencia.
+                     * Obt√©m o valor da propriedade dataInicioVigencia.
                      * 
                      * @return
                      *     possible object is
@@ -7980,7 +7987,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade nomePapelPessoa.
+                     * Obt√©m o valor da propriedade nomePapelPessoa.
                      * 
                      * @return
                      *     possible object is
@@ -8004,7 +8011,7 @@ public class ObterPessoasContratosCompletoResponseType {
                     }
 
                     /**
-                     * ObtÈm o valor da propriedade numeroContrato.
+                     * Obt√©m o valor da propriedade numeroContrato.
                      * 
                      * @return
                      *     possible object is
@@ -8037,28 +8044,28 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="flagPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoPessoaTitularDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="siglaTipoDocumento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -8092,7 +8099,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected String siglaTipoDocumento;
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoDocumento.
+             * Obt√©m o valor da propriedade codigoTipoDocumento.
              * 
              * @return
              *     possible object is
@@ -8116,7 +8123,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoTipoDocumento.
+             * Obt√©m o valor da propriedade descricaoTipoDocumento.
              * 
              * @return
              *     possible object is
@@ -8140,7 +8147,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade digitoCpfouCnpj.
+             * Obt√©m o valor da propriedade digitoCpfouCnpj.
              * 
              * @return
              *     possible object is
@@ -8164,7 +8171,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagPessoaTitularDocumento.
+             * Obt√©m o valor da propriedade flagPessoaTitularDocumento.
              * 
              * @return
              *     possible object is
@@ -8188,7 +8195,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoPessoaTitularDocumento.
+             * Obt√©m o valor da propriedade descricaoPessoaTitularDocumento.
              * 
              * @return
              *     possible object is
@@ -8212,7 +8219,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroCpfouCnpj.
+             * Obt√©m o valor da propriedade numeroCpfouCnpj.
              * 
              * @return
              *     possible object is
@@ -8236,7 +8243,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroDocumento.
+             * Obt√©m o valor da propriedade numeroDocumento.
              * 
              * @return
              *     possible object is
@@ -8260,7 +8267,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroOrdemCnpj.
+             * Obt√©m o valor da propriedade numeroOrdemCnpj.
              * 
              * @return
              *     possible object is
@@ -8284,7 +8291,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -8308,7 +8315,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is
@@ -8332,7 +8339,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade siglaTipoDocumento.
+             * Obt√©m o valor da propriedade siglaTipoDocumento.
              * 
              * @return
              *     possible object is
@@ -8361,42 +8368,42 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
-         *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoUnidadeFederacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="complementoEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="flagNivelConfiancaEnderecoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="flagNivelConfiancaLocalizacaoAtingido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="indiceSucessoEntregaCorrespondencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="nomeBairro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeCidade" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeTipoLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroComplementoCep" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="numeroInicioCep" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *         &lt;element name="numeroLatitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *         &lt;element name="numeroLogradouro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroLongitudeDecimal" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="percentualConfiancaEndereco" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+         *         &lt;element name="siglaPais" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -8460,7 +8467,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected String siglaPais;
 
             /**
-             * ObtÈm o valor da propriedade codigoFinalidadeEndereco.
+             * Obt√©m o valor da propriedade codigoFinalidadeEndereco.
              * 
              * @return
              *     possible object is
@@ -8484,7 +8491,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoFinalidadeEndereco.
+             * Obt√©m o valor da propriedade descricaoFinalidadeEndereco.
              * 
              * @return
              *     possible object is
@@ -8508,7 +8515,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoOrigemMovimento.
+             * Obt√©m o valor da propriedade codigoOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -8532,7 +8539,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoUnidadeFederacao.
+             * Obt√©m o valor da propriedade codigoUnidadeFederacao.
              * 
              * @return
              *     possible object is
@@ -8556,7 +8563,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade complementoEndereco.
+             * Obt√©m o valor da propriedade complementoEndereco.
              * 
              * @return
              *     possible object is
@@ -8580,7 +8587,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+             * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
              * 
              * @return
              *     possible object is
@@ -8604,7 +8611,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -8628,7 +8635,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -8652,7 +8659,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagNivelConfiancaEnderecoAtingido.
+             * Obt√©m o valor da propriedade flagNivelConfiancaEnderecoAtingido.
              * 
              * @return
              *     possible object is
@@ -8676,7 +8683,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagNivelConfiancaLocalizacaoAtingido.
+             * Obt√©m o valor da propriedade flagNivelConfiancaLocalizacaoAtingido.
              * 
              * @return
              *     possible object is
@@ -8700,7 +8707,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade indiceSucessoEntregaCorrespondencia.
+             * Obt√©m o valor da propriedade indiceSucessoEntregaCorrespondencia.
              * 
              * @return
              *     possible object is
@@ -8724,7 +8731,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeBairro.
+             * Obt√©m o valor da propriedade nomeBairro.
              * 
              * @return
              *     possible object is
@@ -8748,7 +8755,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeCidade.
+             * Obt√©m o valor da propriedade nomeCidade.
              * 
              * @return
              *     possible object is
@@ -8772,7 +8779,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeLogradouro.
+             * Obt√©m o valor da propriedade nomeLogradouro.
              * 
              * @return
              *     possible object is
@@ -8796,7 +8803,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeOrigemMovimento.
+             * Obt√©m o valor da propriedade nomeOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -8820,7 +8827,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeTipoLogradouro.
+             * Obt√©m o valor da propriedade nomeTipoLogradouro.
              * 
              * @return
              *     possible object is
@@ -8844,7 +8851,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroComplementoCep.
+             * Obt√©m o valor da propriedade numeroComplementoCep.
              * 
              * @return
              *     possible object is
@@ -8868,7 +8875,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroInicioCep.
+             * Obt√©m o valor da propriedade numeroInicioCep.
              * 
              * @return
              *     possible object is
@@ -8892,7 +8899,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroLatitudeDecimal.
+             * Obt√©m o valor da propriedade numeroLatitudeDecimal.
              * 
              * @return
              *     possible object is
@@ -8916,7 +8923,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroLogradouro.
+             * Obt√©m o valor da propriedade numeroLogradouro.
              * 
              * @return
              *     possible object is
@@ -8940,7 +8947,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroLongitudeDecimal.
+             * Obt√©m o valor da propriedade numeroLongitudeDecimal.
              * 
              * @return
              *     possible object is
@@ -8964,7 +8971,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -8988,7 +8995,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is
@@ -9012,7 +9019,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade percentualConfiancaEndereco.
+             * Obt√©m o valor da propriedade percentualConfiancaEndereco.
              * 
              * @return
              *     possible object is
@@ -9036,7 +9043,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade siglaPais.
+             * Obt√©m o valor da propriedade siglaPais.
              * 
              * @return
              *     possible object is
@@ -9065,28 +9072,28 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoFinalidadeEndereco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoTipoEnderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="enderecoEletronico" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -9122,7 +9129,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Short numeroSequencia;
 
             /**
-             * ObtÈm o valor da propriedade codigoFinalidadeEndereco.
+             * Obt√©m o valor da propriedade codigoFinalidadeEndereco.
              * 
              * @return
              *     possible object is
@@ -9146,7 +9153,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoFinalidadeEndereco.
+             * Obt√©m o valor da propriedade descricaoFinalidadeEndereco.
              * 
              * @return
              *     possible object is
@@ -9170,7 +9177,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoOrigemMovimento.
+             * Obt√©m o valor da propriedade codigoOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -9194,7 +9201,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoEnderecoEletronico.
+             * Obt√©m o valor da propriedade codigoTipoEnderecoEletronico.
              * 
              * @return
              *     possible object is
@@ -9218,7 +9225,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+             * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
              * 
              * @return
              *     possible object is
@@ -9242,7 +9249,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -9266,7 +9273,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade enderecoEletronico.
+             * Obt√©m o valor da propriedade enderecoEletronico.
              * 
              * @return
              *     possible object is
@@ -9290,7 +9297,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -9314,7 +9321,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeOrigemMovimento.
+             * Obt√©m o valor da propriedade nomeOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -9338,7 +9345,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -9362,7 +9369,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is
@@ -9391,89 +9398,89 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *                   &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *                   &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoGrupoAgregacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="codigoSexo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoSituacaoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataAtualizacaoGrupoAgregacao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataNascimento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="deficienciasFisicas" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="flagPessoaDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="flagPessoaEstrangeira" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="nomeEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataInclusaoRegistroEstadoCivil" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="ocupacoes" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *         &lt;element name="codigoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataInclusaoRegistroFaixaRenda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="nomeMae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomePai" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="vinculosPep" maxOccurs="unbounded" minOccurs="0"&gt;
+         *           &lt;complexType&gt;
+         *             &lt;complexContent&gt;
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *                 &lt;sequence&gt;
+         *                   &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                   &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *                   &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *                   &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *                 &lt;/sequence&gt;
+         *               &lt;/restriction&gt;
+         *             &lt;/complexContent&gt;
+         *           &lt;/complexType&gt;
+         *         &lt;/element&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -9533,7 +9540,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected List<ObterPessoasContratosCompletoResponseType.Pessoa.Fisica.VinculosPep> vinculosPep;
 
             /**
-             * ObtÈm o valor da propriedade codigoExposicaoPoliticaPessoa.
+             * Obt√©m o valor da propriedade codigoExposicaoPoliticaPessoa.
              * 
              * @return
              *     possible object is
@@ -9557,7 +9564,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoExposicaoPoliticaPessoa.
+             * Obt√©m o valor da propriedade descricaoExposicaoPoliticaPessoa.
              * 
              * @return
              *     possible object is
@@ -9581,7 +9588,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoGrupoAgregacaoPessoa.
+             * Obt√©m o valor da propriedade codigoGrupoAgregacaoPessoa.
              * 
              * @return
              *     possible object is
@@ -9605,7 +9612,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoSexo.
+             * Obt√©m o valor da propriedade codigoSexo.
              * 
              * @return
              *     possible object is
@@ -9629,7 +9636,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoSituacaoPessoa.
+             * Obt√©m o valor da propriedade codigoSituacaoPessoa.
              * 
              * @return
              *     possible object is
@@ -9653,7 +9660,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoSituacaoPessoa.
+             * Obt√©m o valor da propriedade descricaoSituacaoPessoa.
              * 
              * @return
              *     possible object is
@@ -9677,7 +9684,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAtualizacaoGrupoAgregacao.
+             * Obt√©m o valor da propriedade dataAtualizacaoGrupoAgregacao.
              * 
              * @return
              *     possible object is
@@ -9701,7 +9708,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataNascimento.
+             * Obt√©m o valor da propriedade dataNascimento.
              * 
              * @return
              *     possible object is
@@ -9754,7 +9761,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagPessoaDeficienciaFisica.
+             * Obt√©m o valor da propriedade flagPessoaDeficienciaFisica.
              * 
              * @return
              *     possible object is
@@ -9778,7 +9785,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagPessoaEstrangeira.
+             * Obt√©m o valor da propriedade flagPessoaEstrangeira.
              * 
              * @return
              *     possible object is
@@ -9802,7 +9809,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoEstadoCivil.
+             * Obt√©m o valor da propriedade codigoEstadoCivil.
              * 
              * @return
              *     possible object is
@@ -9826,7 +9833,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeEstadoCivil.
+             * Obt√©m o valor da propriedade nomeEstadoCivil.
              * 
              * @return
              *     possible object is
@@ -9850,7 +9857,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInclusaoRegistroEstadoCivil.
+             * Obt√©m o valor da propriedade dataInclusaoRegistroEstadoCivil.
              * 
              * @return
              *     possible object is
@@ -9903,7 +9910,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoFaixaRenda.
+             * Obt√©m o valor da propriedade codigoFaixaRenda.
              * 
              * @return
              *     possible object is
@@ -9927,7 +9934,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoFaixaRenda.
+             * Obt√©m o valor da propriedade descricaoFaixaRenda.
              * 
              * @return
              *     possible object is
@@ -9951,7 +9958,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInclusaoRegistroFaixaRenda.
+             * Obt√©m o valor da propriedade dataInclusaoRegistroFaixaRenda.
              * 
              * @return
              *     possible object is
@@ -9975,7 +9982,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeMae.
+             * Obt√©m o valor da propriedade nomeMae.
              * 
              * @return
              *     possible object is
@@ -9999,7 +10006,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomePai.
+             * Obt√©m o valor da propriedade nomePai.
              * 
              * @return
              *     possible object is
@@ -10023,7 +10030,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -10079,21 +10086,21 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="nomeTipoDeficienciaFisica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -10114,7 +10121,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected Long numeroPessoa;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoTipoDeficienciaFisica.
+                 * Obt√©m o valor da propriedade codigoTipoDeficienciaFisica.
                  * 
                  * @return
                  *     possible object is
@@ -10138,7 +10145,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInclusaoRegistro.
+                 * Obt√©m o valor da propriedade dataInclusaoRegistro.
                  * 
                  * @return
                  *     possible object is
@@ -10162,7 +10169,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeTipoDeficienciaFisica.
+                 * Obt√©m o valor da propriedade nomeTipoDeficienciaFisica.
                  * 
                  * @return
                  *     possible object is
@@ -10186,7 +10193,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroPessoa.
+                 * Obt√©m o valor da propriedade numeroPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10215,21 +10222,21 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -10250,7 +10257,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected Long numeroPessoa;
 
                 /**
-                 * ObtÈm o valor da propriedade numeroOcupacao.
+                 * Obt√©m o valor da propriedade numeroOcupacao.
                  * 
                  * @return
                  *     possible object is
@@ -10274,7 +10281,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeOcupacao.
+                 * Obt√©m o valor da propriedade nomeOcupacao.
                  * 
                  * @return
                  *     possible object is
@@ -10298,7 +10305,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInclusaoRegistro.
+                 * Obt√©m o valor da propriedade dataInclusaoRegistro.
                  * 
                  * @return
                  *     possible object is
@@ -10322,7 +10329,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroPessoa.
+                 * Obt√©m o valor da propriedade numeroPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10351,32 +10358,32 @@ public class ObterPessoasContratosCompletoResponseType {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
              * 
              * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-             *         &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-             *         &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
+             * &lt;complexType&gt;
+             *   &lt;complexContent&gt;
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+             *       &lt;sequence&gt;
+             *         &lt;element name="codigoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *         &lt;element name="dataFinalVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+             *         &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroCpf" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *         &lt;element name="numeroOcupacao" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+             *         &lt;element name="nomeOcupacao" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *         &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+             *         &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+             *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+             *       &lt;/sequence&gt;
+             *     &lt;/restriction&gt;
+             *   &lt;/complexContent&gt;
+             * &lt;/complexType&gt;
              * </pre>
              * 
              * 
@@ -10420,7 +10427,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 protected Short numeroSequencia;
 
                 /**
-                 * ObtÈm o valor da propriedade codigoExposicaoPoliticaPessoa.
+                 * Obt√©m o valor da propriedade codigoExposicaoPoliticaPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10444,7 +10451,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoExposicaoPoliticaPessoa.
+                 * Obt√©m o valor da propriedade descricaoExposicaoPoliticaPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10468,7 +10475,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoGrauParentesco.
+                 * Obt√©m o valor da propriedade codigoGrauParentesco.
                  * 
                  * @return
                  *     possible object is
@@ -10492,7 +10499,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataFinalVigencia.
+                 * Obt√©m o valor da propriedade dataFinalVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -10516,7 +10523,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade dataInicioVigencia.
+                 * Obt√©m o valor da propriedade dataInicioVigencia.
                  * 
                  * @return
                  *     possible object is
@@ -10540,7 +10547,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeGrauParentesco.
+                 * Obt√©m o valor da propriedade nomeGrauParentesco.
                  * 
                  * @return
                  *     possible object is
@@ -10564,7 +10571,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomePessoa.
+                 * Obt√©m o valor da propriedade nomePessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10588,7 +10595,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroCpf.
+                 * Obt√©m o valor da propriedade numeroCpf.
                  * 
                  * @return
                  *     possible object is
@@ -10612,7 +10619,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroOcupacao.
+                 * Obt√©m o valor da propriedade numeroOcupacao.
                  * 
                  * @return
                  *     possible object is
@@ -10636,7 +10643,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade nomeOcupacao.
+                 * Obt√©m o valor da propriedade nomeOcupacao.
                  * 
                  * @return
                  *     possible object is
@@ -10660,7 +10667,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroPessoa.
+                 * Obt√©m o valor da propriedade numeroPessoa.
                  * 
                  * @return
                  *     possible object is
@@ -10684,7 +10691,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroPessoaVinculada.
+                 * Obt√©m o valor da propriedade numeroPessoaVinculada.
                  * 
                  * @return
                  *     possible object is
@@ -10708,7 +10715,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade codigoTipoPessoaVinculada.
+                 * Obt√©m o valor da propriedade codigoTipoPessoaVinculada.
                  * 
                  * @return
                  *     possible object is
@@ -10732,7 +10739,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade descricaoTipoPessoaVinculada.
+                 * Obt√©m o valor da propriedade descricaoTipoPessoaVinculada.
                  * 
                  * @return
                  *     possible object is
@@ -10756,7 +10763,7 @@ public class ObterPessoasContratosCompletoResponseType {
                 }
 
                 /**
-                 * ObtÈm o valor da propriedade numeroSequencia.
+                 * Obt√©m o valor da propriedade numeroSequencia.
                  * 
                  * @return
                  *     possible object is
@@ -10787,27 +10794,27 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="dataRegistroAbertura" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataInclusaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="codigoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoTipoValorContabil" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoFaixaValorContabil" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeAtividadeCnae" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeNaturezaJuridica" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroCnae" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -10841,7 +10848,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Long numeroPessoa;
 
             /**
-             * ObtÈm o valor da propriedade codigoNaturezaJuridica.
+             * Obt√©m o valor da propriedade codigoNaturezaJuridica.
              * 
              * @return
              *     possible object is
@@ -10865,7 +10872,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataRegistroAbertura.
+             * Obt√©m o valor da propriedade dataRegistroAbertura.
              * 
              * @return
              *     possible object is
@@ -10889,7 +10896,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInclusaoRegistro.
+             * Obt√©m o valor da propriedade dataInclusaoRegistro.
              * 
              * @return
              *     possible object is
@@ -10913,7 +10920,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoFaixaValorContabil.
+             * Obt√©m o valor da propriedade codigoFaixaValorContabil.
              * 
              * @return
              *     possible object is
@@ -10937,7 +10944,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoValorContabil.
+             * Obt√©m o valor da propriedade codigoTipoValorContabil.
              * 
              * @return
              *     possible object is
@@ -10961,7 +10968,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoFaixaValorContabil.
+             * Obt√©m o valor da propriedade descricaoFaixaValorContabil.
              * 
              * @return
              *     possible object is
@@ -10985,7 +10992,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeAtividadeCnae.
+             * Obt√©m o valor da propriedade nomeAtividadeCnae.
              * 
              * @return
              *     possible object is
@@ -11009,7 +11016,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeNaturezaJuridica.
+             * Obt√©m o valor da propriedade nomeNaturezaJuridica.
              * 
              * @return
              *     possible object is
@@ -11033,7 +11040,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroCnae.
+             * Obt√©m o valor da propriedade numeroCnae.
              * 
              * @return
              *     possible object is
@@ -11057,7 +11064,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -11086,24 +11093,24 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoTipoSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="emailSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="celularSocial" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataNascimentoSocial" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="flagSocial" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -11130,7 +11137,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Short flagSocial;
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoSocial.
+             * Obt√©m o valor da propriedade codigoTipoSocial.
              * 
              * @return
              *     possible object is
@@ -11154,7 +11161,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoTipoSocial.
+             * Obt√©m o valor da propriedade descricaoTipoSocial.
              * 
              * @return
              *     possible object is
@@ -11178,7 +11185,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeSocial.
+             * Obt√©m o valor da propriedade nomeSocial.
              * 
              * @return
              *     possible object is
@@ -11202,7 +11209,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade emailSocial.
+             * Obt√©m o valor da propriedade emailSocial.
              * 
              * @return
              *     possible object is
@@ -11226,7 +11233,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade celularSocial.
+             * Obt√©m o valor da propriedade celularSocial.
              * 
              * @return
              *     possible object is
@@ -11250,7 +11257,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataNascimentoSocial.
+             * Obt√©m o valor da propriedade dataNascimentoSocial.
              * 
              * @return
              *     possible object is
@@ -11274,7 +11281,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagSocial.
+             * Obt√©m o valor da propriedade flagSocial.
              * 
              * @return
              *     possible object is
@@ -11303,20 +11310,20 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -11334,7 +11341,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Long numeroPessoa;
 
             /**
-             * ObtÈm o valor da propriedade codigoPapelPessoa.
+             * Obt√©m o valor da propriedade codigoPapelPessoa.
              * 
              * @return
              *     possible object is
@@ -11358,7 +11365,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomePapelPessoa.
+             * Obt√©m o valor da propriedade nomePapelPessoa.
              * 
              * @return
              *     possible object is
@@ -11382,7 +11389,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -11411,29 +11418,29 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoDdd" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoDdi" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoTipoTelefone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="dataAtualizacaoRegistro" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="flagAutorizacaoPropaganda" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeOrigemMovimento" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="numeroTelefone" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -11471,7 +11478,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Long numeroTelefone;
 
             /**
-             * ObtÈm o valor da propriedade codigoDdd.
+             * Obt√©m o valor da propriedade codigoDdd.
              * 
              * @return
              *     possible object is
@@ -11495,7 +11502,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoDdi.
+             * Obt√©m o valor da propriedade codigoDdi.
              * 
              * @return
              *     possible object is
@@ -11519,7 +11526,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoOrigemMovimento.
+             * Obt√©m o valor da propriedade codigoOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -11543,7 +11550,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoTelefone.
+             * Obt√©m o valor da propriedade codigoTipoTelefone.
              * 
              * @return
              *     possible object is
@@ -11567,7 +11574,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoTipoTelefone.
+             * Obt√©m o valor da propriedade descricaoTipoTelefone.
              * 
              * @return
              *     possible object is
@@ -11591,7 +11598,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAtualizacaoRegistro.
+             * Obt√©m o valor da propriedade dataAtualizacaoRegistro.
              * 
              * @return
              *     possible object is
@@ -11615,7 +11622,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade dataAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -11639,7 +11646,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade flagAutorizacaoPropaganda.
+             * Obt√©m o valor da propriedade flagAutorizacaoPropaganda.
              * 
              * @return
              *     possible object is
@@ -11663,7 +11670,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeOrigemMovimento.
+             * Obt√©m o valor da propriedade nomeOrigemMovimento.
              * 
              * @return
              *     possible object is
@@ -11687,7 +11694,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -11711,7 +11718,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is
@@ -11735,7 +11742,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroTelefone.
+             * Obt√©m o valor da propriedade numeroTelefone.
              * 
              * @return
              *     possible object is
@@ -11764,35 +11771,35 @@ public class ObterPessoasContratosCompletoResponseType {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
          * 
          * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *         &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-         *         &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *         &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="codigoExposicaoPoliticaPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoExposicaoPoliticaPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="codigoGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoProdutoBcp" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="codigoTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *         &lt;element name="dataFinalVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataInicioVigencia" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="dataInicioVigenciaContrato" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+         *         &lt;element name="nomeGrauParentesco" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomePessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="nomeTipoRelacionamentoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroContratoSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroContratoVinculado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="numeroPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+         *         &lt;element name="codigoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="descricaoTipoPessoaVinculada" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+         *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
          * </pre>
          * 
          * 
@@ -11843,7 +11850,7 @@ public class ObterPessoasContratosCompletoResponseType {
             protected Short numeroSequencia;
 
             /**
-             * ObtÈm o valor da propriedade codigoExposicaoPoliticaPessoaVinculada.
+             * Obt√©m o valor da propriedade codigoExposicaoPoliticaPessoaVinculada.
              * 
              * @return
              *     possible object is
@@ -11867,7 +11874,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoExposicaoPoliticaPessoa.
+             * Obt√©m o valor da propriedade descricaoExposicaoPoliticaPessoa.
              * 
              * @return
              *     possible object is
@@ -11891,7 +11898,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoGrauParentesco.
+             * Obt√©m o valor da propriedade codigoGrauParentesco.
              * 
              * @return
              *     possible object is
@@ -11915,7 +11922,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoProdutoBcp.
+             * Obt√©m o valor da propriedade codigoProdutoBcp.
              * 
              * @return
              *     possible object is
@@ -11939,7 +11946,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoRelacionamentoPessoa.
+             * Obt√©m o valor da propriedade codigoTipoRelacionamentoPessoa.
              * 
              * @return
              *     possible object is
@@ -11963,7 +11970,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataFinalVigenciaContrato.
+             * Obt√©m o valor da propriedade dataFinalVigenciaContrato.
              * 
              * @return
              *     possible object is
@@ -11987,7 +11994,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInicioVigencia.
+             * Obt√©m o valor da propriedade dataInicioVigencia.
              * 
              * @return
              *     possible object is
@@ -12011,7 +12018,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade dataInicioVigenciaContrato.
+             * Obt√©m o valor da propriedade dataInicioVigenciaContrato.
              * 
              * @return
              *     possible object is
@@ -12035,7 +12042,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeGrauParentesco.
+             * Obt√©m o valor da propriedade nomeGrauParentesco.
              * 
              * @return
              *     possible object is
@@ -12059,7 +12066,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomePessoaVinculada.
+             * Obt√©m o valor da propriedade nomePessoaVinculada.
              * 
              * @return
              *     possible object is
@@ -12083,7 +12090,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade nomeTipoRelacionamentoPessoa.
+             * Obt√©m o valor da propriedade nomeTipoRelacionamentoPessoa.
              * 
              * @return
              *     possible object is
@@ -12107,7 +12114,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroContratoSistemaOrigem.
+             * Obt√©m o valor da propriedade numeroContratoSistemaOrigem.
              * 
              * @return
              *     possible object is
@@ -12131,7 +12138,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroContratoVinculado.
+             * Obt√©m o valor da propriedade numeroContratoVinculado.
              * 
              * @return
              *     possible object is
@@ -12155,7 +12162,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoa.
+             * Obt√©m o valor da propriedade numeroPessoa.
              * 
              * @return
              *     possible object is
@@ -12179,7 +12186,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroPessoaVinculada.
+             * Obt√©m o valor da propriedade numeroPessoaVinculada.
              * 
              * @return
              *     possible object is
@@ -12203,7 +12210,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade codigoTipoPessoaVinculada.
+             * Obt√©m o valor da propriedade codigoTipoPessoaVinculada.
              * 
              * @return
              *     possible object is
@@ -12227,7 +12234,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade descricaoTipoPessoaVinculada.
+             * Obt√©m o valor da propriedade descricaoTipoPessoaVinculada.
              * 
              * @return
              *     possible object is
@@ -12251,7 +12258,7 @@ public class ObterPessoasContratosCompletoResponseType {
             }
 
             /**
-             * ObtÈm o valor da propriedade numeroSequencia.
+             * Obt√©m o valor da propriedade numeroSequencia.
              * 
              * @return
              *     possible object is

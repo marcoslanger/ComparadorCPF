@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2019.03.23 às 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -9,24 +16,24 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java de ObterPapeisPessoasType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterPapeisPessoasType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *         &lt;element name="registroNacionalEstrangeiro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ObterPapeisPessoasType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="numeroCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="numeroOrdemCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *         &lt;element name="digitoCpfouCnpj" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *         &lt;element name="registroNacionalEstrangeiro" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="numeroPessoa" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="nomePessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="tipoPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,7 +59,7 @@ public class ObterPapeisPessoasType {
     protected String tipoPessoa;
 
     /**
-     * Obt�m o valor da propriedade numeroCpfouCnpj.
+     * Obtém o valor da propriedade numeroCpfouCnpj.
      * 
      * @return
      *     possible object is
@@ -76,7 +83,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade numeroOrdemCnpj.
+     * Obtém o valor da propriedade numeroOrdemCnpj.
      * 
      * @return
      *     possible object is
@@ -100,7 +107,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade digitoCpfouCnpj.
+     * Obtém o valor da propriedade digitoCpfouCnpj.
      * 
      * @return
      *     possible object is
@@ -124,7 +131,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade registroNacionalEstrangeiro.
+     * Obtém o valor da propriedade registroNacionalEstrangeiro.
      * 
      * @return
      *     possible object is
@@ -148,7 +155,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade numeroPessoa.
+     * Obtém o valor da propriedade numeroPessoa.
      * 
      * @return
      *     possible object is
@@ -172,7 +179,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade nomePessoa.
+     * Obtém o valor da propriedade nomePessoa.
      * 
      * @return
      *     possible object is
@@ -196,7 +203,7 @@ public class ObterPapeisPessoasType {
     }
 
     /**
-     * Obt�m o valor da propriedade tipoPessoa.
+     * Obtém o valor da propriedade tipoPessoa.
      * 
      * @return
      *     possible object is

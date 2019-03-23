@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa√ß√£o de Refer√™ncia (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modifica√ß√µes neste arquivo ser√£o perdidas ap√≥s a recompila√ß√£o do esquema de origem. 
+// Gerado em: 2019.03.23 √†s 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -13,40 +20,40 @@ import javax.xml.datatype.XMLGregorianCalendar;
 /**
  * <p>Classe Java de ObterFuncionarioPrestadorResponseType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ObterFuncionarioPrestadorResponseType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="dadosFuncPrest" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="codigoCargo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="codigoEmpresa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="nomeEmpresa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="codigoEstruturaCargo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="dataAdmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                   &lt;element name="dataDesligamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *                   &lt;element name="numeroMatricula" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="codigoPrestadorSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *                   &lt;element name="codigoTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *                   &lt;element name="nomeTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ObterFuncionarioPrestadorResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="dadosFuncPrest" maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoCargo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoEmpresa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="nomeEmpresa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoEstruturaCargo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="dataAdmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                   &lt;element name="dataDesligamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *                   &lt;element name="numeroMatricula" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                   &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoPrestadorSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *                   &lt;element name="codigoTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *                   &lt;element name="nomeTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -92,30 +99,30 @@ public class ObterFuncionarioPrestadorResponseType {
     /**
      * <p>Classe Java de anonymous complex type.
      * 
-     * <p>O seguinte fragmento do esquema especifica o conte˙do esperado contido dentro desta classe.
+     * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="codigoCargo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="codigoEmpresa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="nomeEmpresa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="codigoEstruturaCargo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="dataAdmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *         &lt;element name="dataDesligamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
-     *         &lt;element name="numeroMatricula" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="codigoPrestadorSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-     *         &lt;element name="codigoTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
-     *         &lt;element name="nomeTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="codigoPapelPessoa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="nomePapelPessoa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="codigoCargo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="codigoEmpresa" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="nomeEmpresa" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="codigoEstruturaCargo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="dataAdmissao" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *         &lt;element name="dataDesligamento" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+     *         &lt;element name="numeroMatricula" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *         &lt;element name="numeroSequencia" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="codigoPrestadorSistemaOrigem" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+     *         &lt;element name="codigoTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+     *         &lt;element name="nomeTipoPrestador" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -155,7 +162,7 @@ public class ObterFuncionarioPrestadorResponseType {
         protected String nomeTipoPrestador;
 
         /**
-         * ObtÈm o valor da propriedade codigoPapelPessoa.
+         * Obt√©m o valor da propriedade codigoPapelPessoa.
          * 
          * @return
          *     possible object is
@@ -179,7 +186,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomePapelPessoa.
+         * Obt√©m o valor da propriedade nomePapelPessoa.
          * 
          * @return
          *     possible object is
@@ -203,7 +210,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoCargo.
+         * Obt√©m o valor da propriedade codigoCargo.
          * 
          * @return
          *     possible object is
@@ -227,7 +234,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoEmpresa.
+         * Obt√©m o valor da propriedade codigoEmpresa.
          * 
          * @return
          *     possible object is
@@ -251,7 +258,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomeEmpresa.
+         * Obt√©m o valor da propriedade nomeEmpresa.
          * 
          * @return
          *     possible object is
@@ -275,7 +282,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoEstruturaCargo.
+         * Obt√©m o valor da propriedade codigoEstruturaCargo.
          * 
          * @return
          *     possible object is
@@ -299,7 +306,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade dataAdmissao.
+         * Obt√©m o valor da propriedade dataAdmissao.
          * 
          * @return
          *     possible object is
@@ -323,7 +330,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade dataDesligamento.
+         * Obt√©m o valor da propriedade dataDesligamento.
          * 
          * @return
          *     possible object is
@@ -347,7 +354,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade numeroMatricula.
+         * Obt√©m o valor da propriedade numeroMatricula.
          * 
          * @return
          *     possible object is
@@ -371,7 +378,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade numeroSequencia.
+         * Obt√©m o valor da propriedade numeroSequencia.
          * 
          * @return
          *     possible object is
@@ -395,7 +402,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoPrestadorSistemaOrigem.
+         * Obt√©m o valor da propriedade codigoPrestadorSistemaOrigem.
          * 
          * @return
          *     possible object is
@@ -419,7 +426,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade codigoTipoPrestador.
+         * Obt√©m o valor da propriedade codigoTipoPrestador.
          * 
          * @return
          *     possible object is
@@ -443,7 +450,7 @@ public class ObterFuncionarioPrestadorResponseType {
         }
 
         /**
-         * ObtÈm o valor da propriedade nomeTipoPrestador.
+         * Obt√©m o valor da propriedade nomeTipoPrestador.
          * 
          * @return
          *     possible object is

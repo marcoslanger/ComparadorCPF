@@ -33,7 +33,9 @@ public class ComparadorClient {
 			ObterContratoResponseType.Pessoa pessoa = pessoas.get(0);
 			List<Contratos> contratos = pessoa.getContratos();
 			for (Contratos contrato : contratos) {
-				System.out.println(contrato.getCodigoSituacaoContrato());
+				if ("ATIVO".equalsIgnoreCase(contrato.getNomeSituacaoContrato())
+						&& contrato.getNomeProdutoBcp().contains("Previdencia"))
+					System.out.println(contrato.getNomeSituacaoContrato());
 			}
 		
 		} catch (MalformedURLException e) {

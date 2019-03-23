@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2019.03.23 às 05:54:05 PM BRT 
+//
+
 
 package br.com.portoseguro.ws.schema;
 
@@ -9,19 +16,19 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java de RetornoType complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="RetornoType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/>
- *         &lt;element name="mensagem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RetornoType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}short" minOccurs="0"/&gt;
+ *         &lt;element name="mensagem" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -37,7 +44,7 @@ public class RetornoType {
     protected String mensagem;
 
     /**
-     * Obt�m o valor da propriedade codigo.
+     * Obtém o valor da propriedade codigo.
      * 
      * @return
      *     possible object is
@@ -61,7 +68,7 @@ public class RetornoType {
     }
 
     /**
-     * Obt�m o valor da propriedade mensagem.
+     * Obtém o valor da propriedade mensagem.
      * 
      * @return
      *     possible object is
