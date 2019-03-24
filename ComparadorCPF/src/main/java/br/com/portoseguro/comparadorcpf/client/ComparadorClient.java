@@ -2,6 +2,7 @@ package br.com.portoseguro.comparadorcpf.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
@@ -10,6 +11,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import br.com.portoseguro.comparadorcpf.ComparadorCpfApplication;
+import br.com.portoseguro.comparadorcpf.xls.ExcelReader;
+import br.com.portoseguro.comparadorcpf.xls.Linha;
 import br.com.portoseguro.ws.schema.ConsultaDadosBCPWS;
 import br.com.portoseguro.ws.schema.ConsultaDadosBCPWS_Service;
 import br.com.portoseguro.ws.schema.ObterContratoResponseType;
@@ -17,36 +20,52 @@ import br.com.portoseguro.ws.schema.ObterContratoResponseType.Pessoa.Contratos;
 import br.com.portoseguro.ws.schema.PortoSeguroFaultInfo;
  
 @SpringBootApplication
-public class ComparadorClient {
+public class ComparadorClient {	
+	 
  
     public static void main(String[] args) {
         SpringApplication.run(ComparadorCpfApplication.class, args);
+        ComparadorClient comparadorClient = new ComparadorClient();
+        List<Linha> linhas = ExcelReader.readFile();
+        comparadorClient.lerWebService(linhas);
+    }
+     
+    private synchronized void lerWebService(List<Linha> linhas) {
+    	URL wsdlLocation;                
         
-        URL wsdlLocation;
-		try {
-			wsdlLocation = new URL("http://was7corp/bcp-serviceWS/ConsultaDadosBCPWS/WEB-INF/wsdl/ConsultaDadosBCPIntegrationServiceSoap11V2_0.wsdl");
-		
-			QName serviceName = new QName("http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/", "ConsultaDadosBCPWS");
-			final ConsultaDadosBCPWS_Service proxy = new ConsultaDadosBCPWS_Service(wsdlLocation, serviceName);
-			final ConsultaDadosBCPWS servico = proxy.getConsultaDadosBCPWS();			
-			List<ObterContratoResponseType.Pessoa> pessoas = servico.obterContrato(new Long(27528309), new Short("0"), new Short("71"), "", new Long(0), new Long(0), "", "", "", null, null);
-			ObterContratoResponseType.Pessoa pessoa = pessoas.get(0);
-			List<Contratos> contratos = pessoa.getContratos();
-			for (Contratos contrato : contratos) {
-				if ("ATIVO".equalsIgnoreCase(contrato.getNomeSituacaoContrato())
-						&& contrato.getNomeProdutoBcp().contains("Previdencia"))
-					System.out.println(contrato.getNomeSituacaoContrato());
+		try {			
+			Iterator<Linha> iterator = linhas.iterator();
+			
+			while(iterator.hasNext()) {
+				Linha linha = (Linha)iterator.next();
+				wsdlLocation = new URL("http://was7corp/bcp-serviceWS/ConsultaDadosBCPWS/WEB-INF/wsdl/ConsultaDadosBCPIntegrationServiceSoap11V2_0.wsdl");
+			
+				QName serviceName = new QName("http://www.portoseguro.com.br/bi/integration/ConsultaDadosBCPABCS/V2_0/", "ConsultaDadosBCPWS");
+				final ConsultaDadosBCPWS_Service proxy = new ConsultaDadosBCPWS_Service(wsdlLocation, serviceName);
+				final ConsultaDadosBCPWS servico = proxy.getConsultaDadosBCPWS();			
+				List<ObterContratoResponseType.Pessoa> pessoas = servico.obterContrato(new Long(linha.getCpf()), new Short("0"), new Short(String.valueOf(linha.getDigito())), "", new Long(0), new Long(0), "", "", "", null, null);
+				ObterContratoResponseType.Pessoa pessoa = pessoas.get(0);
+				List<Contratos> contratos = pessoa.getContratos();
+				
+				System.out.println("=== CPF: " + linha.getCpf() + " ===");
+				
+				for (Contratos contrato : contratos) {
+					if ("ATIVO".equalsIgnoreCase(contrato.getNomeSituacaoContrato())
+							&& contrato.getNomeProdutoBcp().contains("Previdencia"))
+						System.out.println("Susep: " + contrato.getCodigoSusep() + " " + contrato.getNomeProdutoBcp() + " " + contrato.getNomeSituacaoContrato() + " Num. Digt. Proposta: " + contrato.getNumeroDigitoProposta());
+				}
+				wait(300);
 			}
 		
 		} catch (MalformedURLException e) {
-			e.printStackTrace();
+			System.out.println("Ocorreu um erro no acesso ao webservice.");
 		} catch (NumberFormatException e) {
-			e.printStackTrace();
+			System.out.println("Ocorreu um na formatacao de campos do retorno do webservice.");
 		} catch (PortoSeguroFaultInfo e) {
-			e.printStackTrace();
+			System.out.println("Ocorreu um erro no acesso ao webservice.");
+		} catch (InterruptedException e) {
+			System.out.println("Ocorreu um erro durante o timeout.");
 		} 
     }
-     
-    
     
 }

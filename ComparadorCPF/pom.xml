@@ -38,13 +38,20 @@
 		    <groupId>io.springfox</groupId>
 		    <artifactId>springfox-swagger-ui</artifactId>
 		    <version>2.9.2</version>
-		</dependency>		
+		</dependency>	
+		
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>4.0.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>		
+
 	</dependencies>
 
 	<build>
@@ -52,28 +59,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			
-			<plugin>
-			    <groupId>org.jvnet.jaxb2.maven2</groupId>
-			    <artifactId>maven-jaxb2-plugin</artifactId>
-			    <version>0.13.2</version>
-			    <executions>
-			        <execution>
-			            <goals>
-			                <goal>generate</goal>
-			            </goals>
-			        </execution>
-			    </executions>
-			    <configuration>
-			        <generatePackage>br.com.portoseguro.ws.schema</generatePackage>
-			        <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
-			        <schemaDirectory>${project.basedir}/src/main/resources/wsdl</schemaDirectory>
-			        <schemaIncludes>
-			            <include>*.wsdl</include>
-			        </schemaIncludes>
-			    </configuration>
-			</plugin>
+			</plugin>			
+
 		</plugins>
 	</build>
 
