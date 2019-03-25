@@ -43,7 +43,7 @@ public class ExcelWriter {
 	            Row row = sheet.createRow(rowNum++);
 	            int colNum = 0;            
 	            Cell cell = row.createCell(colNum++);
-	            cell.setCellValue(new Double(linha.getCpf() + linha.getDigito()));
+	            cell.setCellValue(linha.getCpf() + linha.getDigito());
 	            cpf = linha.getCpf();
         	}
             

@@ -15,6 +15,8 @@ public class ComparadorCpfApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ComparadorCpfApplication.class, args);
 		
+		cls();
+		
 		ComparadorClient comparadorClient = new ComparadorClient();
 		System.out.println("");
 		System.out.println("");
@@ -23,5 +25,15 @@ public class ComparadorCpfApplication {
         List<Linha> linhas = ExcelReader.readFile();
         comparadorClient.lerWebService(linhas);
 	}
+	
+	public static void cls() {
+        try {
+        	new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        }
+        catch(final Exception e) {
+            System.out.print(e);
+        }
+    }
+    
 
 }

@@ -70,8 +70,14 @@ public class ComparadorClient {
 							+ " Ramo: " + ramo
 							+ " Apolice: " + apolice;
 							
+							Linha linhaRetorno = new Linha();	
+							linhaRetorno.setCpf(linha.getCpf());
+							linhaRetorno.setDigito(linha.getDigito());
+							linhaRetorno.setSucursal(Long.parseLong(sucursal));
+							linhaRetorno.setRamo(Long.parseLong(ramo));
+							linhaRetorno.setApolice(Long.parseLong(apolice));
 							System.out.println(retorno);							
-							paragravar.add(linha);
+							paragravar.add(linhaRetorno);
 					}
 				}
 				wait(500);

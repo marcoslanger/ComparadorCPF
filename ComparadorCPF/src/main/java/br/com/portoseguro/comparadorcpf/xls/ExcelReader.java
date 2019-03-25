@@ -26,8 +26,7 @@ public class ExcelReader {
         List<Linha> linhas = null;
         Linha linha = null;
 
-        try {
-        	cls();
+        try {        	
             excelFile = new FileInputStream(new File(FILE_NAME));
             workbook = new XSSFWorkbook(excelFile);
             Sheet datatypeSheet = workbook.getSheetAt(1);
@@ -119,13 +118,5 @@ public class ExcelReader {
         return linhas;
     }
     
-    public static void cls() {
-        try {
-            Runtime.getRuntime().exec("cmd /c cls");
-        }
-        catch(final Exception e) {
-            System.out.print(e);
-        }
-    }
     
 }
