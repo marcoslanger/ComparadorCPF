@@ -34,23 +34,16 @@ public class ExcelWriter {
         celula.setCellValue("RAMO");
         celula = cabecalho.createCell(col++);
         celula.setCellValue("APOLICE");
-        
-        long cpf = 0;
+        celula = cabecalho.createCell(col++);
+        celula.setCellValue("COMPARAÇAO COM ORIGINAL");
+     
 
         for (Linha linha : linhas) {
-        	
-        	if (cpf != linha.getCpf()) {
-	            Row row = sheet.createRow(rowNum++);
-	            int colNum = 0;            
-	            Cell cell = row.createCell(colNum++);
-	            cell.setCellValue(new Long(linha.getCpf() + "" + linha.getDigito()));
-	            cpf = linha.getCpf();
-        	}
             
             Row row2 = sheet.createRow(rowNum++);
             int colNum2 = 0;            
             Cell cell2 = row2.createCell(colNum2++);
-            cell2.setCellValue("");
+            cell2.setCellValue(new Long(linha.getCpf() + "" + linha.getDigito()));
             
             Cell cell3 = row2.createCell(colNum2++);
             cell3.setCellValue(linha.getSucursal());
@@ -60,6 +53,9 @@ public class ExcelWriter {
             
             Cell cell5 = row2.createCell(colNum2++);
             cell5.setCellValue(linha.getApolice());
+            
+            Cell cell6 = row2.createCell(colNum2++);
+            cell6.setCellValue(linha.getComparacao());
                            
         }
 

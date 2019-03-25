@@ -8,6 +8,7 @@ public class Linha {
 	private long apolice = 0;
 	private long cpf = 0;
 	private long digito = 0;
+	private String comparacao = "";
 	
 	public long getNumero() {
 		return numero;
@@ -44,6 +45,12 @@ public class Linha {
 	}
 	public void setDigito(long digito) {
 		this.digito = digito;
+	}
+	public String getComparacao() {
+		return comparacao;
+	}
+	public void setComparacao(String comparacao) {
+		this.comparacao = comparacao;
 	}
 	
 	

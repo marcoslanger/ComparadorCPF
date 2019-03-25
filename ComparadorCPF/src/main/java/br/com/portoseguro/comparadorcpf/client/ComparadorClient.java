@@ -76,6 +76,15 @@ public class ComparadorClient {
 							linhaRetorno.setSucursal(Long.parseLong(sucursal));
 							linhaRetorno.setRamo(Long.parseLong(ramo));
 							linhaRetorno.setApolice(Long.parseLong(apolice));
+							
+							if (linha.getSucursal() == Long.parseLong(sucursal)
+									&& linha.getRamo() == Long.parseLong(ramo) 
+										&& linha.getApolice() == Long.parseLong(apolice)) {
+								linhaRetorno.setComparacao("IGUAL");
+							} else {
+								linhaRetorno.setComparacao("DIFERENTE");
+							}
+							
 							System.out.println(retorno);							
 							paragravar.add(linhaRetorno);
 					}
