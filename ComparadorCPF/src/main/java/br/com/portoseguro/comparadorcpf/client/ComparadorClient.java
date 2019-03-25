@@ -2,39 +2,33 @@ package br.com.portoseguro.comparadorcpf.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import br.com.portoseguro.comparadorcpf.ComparadorCpfApplication;
-import br.com.portoseguro.comparadorcpf.xls.ExcelReader;
+import br.com.portoseguro.comparadorcpf.xls.ExcelWriter;
 import br.com.portoseguro.comparadorcpf.xls.Linha;
 import br.com.portoseguro.ws.schema.ConsultaDadosBCPWS;
 import br.com.portoseguro.ws.schema.ConsultaDadosBCPWS_Service;
 import br.com.portoseguro.ws.schema.ObterContratoResponseType;
 import br.com.portoseguro.ws.schema.ObterContratoResponseType.Pessoa.Contratos;
+import br.com.portoseguro.ws.schema.ObterContratoResponseType.Pessoa.Contratos.ChaveDocumento;
 import br.com.portoseguro.ws.schema.PortoSeguroFaultInfo;
  
-@SpringBootApplication
+
 public class ComparadorClient {	
 	 
- 
-    public static void main(String[] args) {
-        SpringApplication.run(ComparadorCpfApplication.class, args);
-        ComparadorClient comparadorClient = new ComparadorClient();
-        List<Linha> linhas = ExcelReader.readFile();
-        comparadorClient.lerWebService(linhas);
-    }
-     
-    private synchronized void lerWebService(List<Linha> linhas) {
+
+    public synchronized void lerWebService(List<Linha> linhas) {
     	URL wsdlLocation;                
         
-		try {			
+		try {					
+			List<Linha> paragravar = new ArrayList<Linha>();
 			Iterator<Linha> iterator = linhas.iterator();
+			System.out.println("======== CHAMANDO WEBSERVICE PARA CADA CPF ===========");
+			System.out.println("");
 			
 			while(iterator.hasNext()) {
 				Linha linha = (Linha)iterator.next();
@@ -47,15 +41,42 @@ public class ComparadorClient {
 				ObterContratoResponseType.Pessoa pessoa = pessoas.get(0);
 				List<Contratos> contratos = pessoa.getContratos();
 				
-				System.out.println("=== CPF: " + linha.getCpf() + " ===");
+				System.out.println("=== DADOS CPF: " + linha.getCpf() + "-" + linha.getDigito()  + " ===");
 				
 				for (Contratos contrato : contratos) {
 					if ("ATIVO".equalsIgnoreCase(contrato.getNomeSituacaoContrato())
-							&& contrato.getNomeProdutoBcp().contains("Previdencia"))
-						System.out.println("Susep: " + contrato.getCodigoSusep() + " " + contrato.getNomeProdutoBcp() + " " + contrato.getNomeSituacaoContrato() + " Num. Digt. Proposta: " + contrato.getNumeroDigitoProposta());
+							&& contrato.getNomeProdutoBcp().contains("Previdencia")) {
+						
+							String sucursal = "";
+							String ramo = "";
+							String apolice = "";
+						
+							if (contrato.getChaveDocumento() != null && contrato.getChaveDocumento().size() > 0) {
+								List<ChaveDocumento> chaves = contrato.getChaveDocumento();								
+								ChaveDocumento chave = (ChaveDocumento)chaves.get(0);
+								sucursal = chave.getValor();
+								chave = (ChaveDocumento)chaves.get(1);
+								ramo = chave.getValor();
+								chave = (ChaveDocumento)chaves.get(2);
+								apolice = chave.getValor();
+							}
+						
+							String retorno = "Susep: " + contrato.getCodigoSusep() 
+							+ " Nome Produto " 
+							+ contrato.getNomeProdutoBcp() 
+							+ " Situação " + contrato.getNomeSituacaoContrato() 
+							+ " Sucursal: " + sucursal
+							+ " Ramo: " + ramo
+							+ " Apolice: " + apolice;
+							
+							System.out.println(retorno);							
+							paragravar.add(linha);
+					}
 				}
-				wait(300);
+				wait(400);
+				System.out.println("");
 			}
+			ExcelWriter.gravarDiferenca(paragravar);
 		
 		} catch (MalformedURLException e) {
 			System.out.println("Ocorreu um erro no acesso ao webservice.");

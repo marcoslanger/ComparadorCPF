@@ -46,7 +46,9 @@ public class ExcelReader {
                 int countCell = 0;
                 cellIterator.next(); //pula primeira coluna do excel                
                 
-              	System.out.print("Linha " + countLines++ + " --> ");
+                if (cellIterator.hasNext())
+                	System.out.print("Linha " + countLines++ + " --> ");
+                
               	linha = new Linha();
 
                 while (cellIterator.hasNext()) {
