@@ -43,7 +43,7 @@ public class ExcelWriter {
 	            Row row = sheet.createRow(rowNum++);
 	            int colNum = 0;            
 	            Cell cell = row.createCell(colNum++);
-	            cell.setCellValue(new Double(linha.getCpf()));
+	            cell.setCellValue(new Double(linha.getCpf() + linha.getDigito()));
 	            cpf = linha.getCpf();
         	}
             
@@ -67,13 +67,15 @@ public class ExcelWriter {
             FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
             workbook.write(outputStream);
             workbook.close();
+            outputStream.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        System.out.println("Done");
+        System.out.println("=== FINALIZADO ===");
+        System.exit(0);
     }
     
 }

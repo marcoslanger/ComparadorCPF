@@ -27,7 +27,7 @@ public class ExcelReader {
         Linha linha = null;
 
         try {
-
+        	cls();
             excelFile = new FileInputStream(new File(FILE_NAME));
             workbook = new XSSFWorkbook(excelFile);
             Sheet datatypeSheet = workbook.getSheetAt(1);
@@ -58,44 +58,44 @@ public class ExcelReader {
                     
                     if (countCell == 1) {
 	                    if (currentCell.getCellType() == CellType.STRING) {
-	                        System.out.print("Sucursal " + currentCell.getStringCellValue() + "  ");
+	                        System.out.print("Sucursal: " + currentCell.getStringCellValue() + "  ");
 	                        linha.setSucursal(Long.parseLong(currentCell.getStringCellValue()));
 	                    } else if (currentCell.getCellType() == CellType.NUMERIC 
 	                    			|| currentCell.getCellType() == CellType.FORMULA) {
-	                        System.out.print("Sucursal " + Math.round(currentCell.getNumericCellValue()) + "  ");
+	                        System.out.print("Sucursal: " + Math.round(currentCell.getNumericCellValue()) + "  ");
 	                        linha.setSucursal(Math.round(currentCell.getNumericCellValue()));
 	                    } 
                     }
                     
                     if (countCell == 2) {
 	                    if (currentCell.getCellType() == CellType.STRING) {
-	                        System.out.print("Ramo " + currentCell.getStringCellValue() + "  ");
+	                        System.out.print("Ramo: " + currentCell.getStringCellValue() + "  ");
 	                        linha.setSucursal(Long.parseLong(currentCell.getStringCellValue()));
 	                    } else if (currentCell.getCellType() == CellType.NUMERIC 
                     				|| currentCell.getCellType() == CellType.FORMULA) {
-	                        System.out.print("Ramo " + Math.round(currentCell.getNumericCellValue()) + "  ");
+	                        System.out.print("Ramo: " + Math.round(currentCell.getNumericCellValue()) + "  ");
 	                        linha.setRamo(Math.round(currentCell.getNumericCellValue()));
 	                    }
                     }
                     
                     if (countCell == 3) {
 	                    if (currentCell.getCellType() == CellType.STRING) {
-	                        System.out.print("Apolice " + currentCell.getStringCellValue() + "  ");
+	                        System.out.print("Apolice: " + currentCell.getStringCellValue() + "  ");
 	                        linha.setSucursal(Long.parseLong(currentCell.getStringCellValue()));
 	                    } else if (currentCell.getCellType() == CellType.NUMERIC 
                     				|| currentCell.getCellType() == CellType.FORMULA) {
-	                        System.out.print("Apolice " + Math.round(currentCell.getNumericCellValue()) + "  ");
+	                        System.out.print("Apolice: " + Math.round(currentCell.getNumericCellValue()) + "  ");
 	                        linha.setApolice(Math.round(currentCell.getNumericCellValue()));
 	                    }
                     }
                     
                     if (countCell == 4) {
 	                    if (currentCell.getCellType() == CellType.STRING) {
-	                        System.out.print("CPF " + currentCell.getStringCellValue() + "  ");
+	                        System.out.print("CPF: " + currentCell.getStringCellValue() + "  ");
 	                        linha.setSucursal(Long.parseLong(currentCell.getStringCellValue()));
 	                    } else if (currentCell.getCellType() == CellType.NUMERIC 
                     				|| currentCell.getCellType() == CellType.FORMULA) {
-	                        System.out.print("CPF " + Math.round(currentCell.getNumericCellValue()) + "  ");
+	                        System.out.print("CPF: " + Math.round(currentCell.getNumericCellValue()) + "  ");
 	                        String cpfCompleto = String.valueOf(Math.round(currentCell.getNumericCellValue()));
 	                        String cpf = cpfCompleto.substring(0, cpfCompleto.length() - 2);
 	                        String digito = cpfCompleto.substring(cpfCompleto.length() - 2);
@@ -118,4 +118,14 @@ public class ExcelReader {
         } 
         return linhas;
     }
+    
+    public static void cls() {
+        try {
+            Runtime.getRuntime().exec("cmd /c cls");
+        }
+        catch(final Exception e) {
+            System.out.print(e);
+        }
+    }
+    
 }

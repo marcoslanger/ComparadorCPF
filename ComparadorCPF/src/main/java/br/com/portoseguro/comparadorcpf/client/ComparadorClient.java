@@ -27,6 +27,7 @@ public class ComparadorClient {
 		try {					
 			List<Linha> paragravar = new ArrayList<Linha>();
 			Iterator<Linha> iterator = linhas.iterator();
+			System.out.println("");
 			System.out.println("======== CHAMANDO WEBSERVICE PARA CADA CPF ===========");
 			System.out.println("");
 			
@@ -62,9 +63,9 @@ public class ComparadorClient {
 							}
 						
 							String retorno = "Susep: " + contrato.getCodigoSusep() 
-							+ " Nome Produto " 
+							+ " Nome Produto: " 
 							+ contrato.getNomeProdutoBcp() 
-							+ " Situação " + contrato.getNomeSituacaoContrato() 
+							+ " Situação: " + contrato.getNomeSituacaoContrato() 
 							+ " Sucursal: " + sucursal
 							+ " Ramo: " + ramo
 							+ " Apolice: " + apolice;
@@ -73,7 +74,7 @@ public class ComparadorClient {
 							paragravar.add(linha);
 					}
 				}
-				wait(400);
+				wait(500);
 				System.out.println("");
 			}
 			ExcelWriter.gravarDiferenca(paragravar);
